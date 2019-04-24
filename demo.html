@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>CARAT3D - 3D modeling services and solutions</title>
+      <link rel="stylesheet" href="main.css">
+      <link rel="shortcut icon" href="imgs/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:800" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+      <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="https://www.carat3d.com/"><div class="logoCarat"></div></a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="https://www.carat3d.com/">Home</a></li>
+                              <li><a href="https://www.carat3d.com/#services" class="close">Services</a></li>
+                              <li><a href="demo">Request a demo</a></li>
+                              <li><a href="#contact" class="close">Contact</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+      <main>
+            <div style="height:1px;width:100%;display:block;background:transparent;margin: 0;"></div>
+            <div class="wrapDemo">
+                  <h1 class="header">Would you like a demo?</h1>
+                  <p class="text">If you would like to know more information about the process, quality, specifications or virtually anything
+                                  about our work, leave us a message and we will get to you as soon as possible.</p>
+                  <div class="calendar">
+                    <form id="input_valcheck" class="contact_form" action="php.php" method="POST">
+                        <input class="input-subject" id="subject" type="text" name="subj" required="" autocomplete="false" placeholder="Subject">
+                        <input class="input-email" id="userEmail" type="email" name="email" required="" placeholder="your@mail.com">
+                        <textarea class="input-message" id="message" type="text" name="message" rows="10" autocomplete="false" cols="30" placeholder="Message" required=""></textarea>
+                        <div>
+                            <input type="checkbox" id="gdpr" name="gdpr" required="">
+                            <label for="gdpr" class="gdpr">I agree with the <a href="https://www.arvisual.eu/privacy" target="_blank">privacy policy.</a>
+                            </label>
+                        </div>
+                        <input id="submit" type="submit" name="submit" value="Submit">
+                    </form>
+                  </div>
+                  <div class="successAlert">
+                        <h1 class="header">Thank you for reaching out</h1>
+                        <p class="text">Your message has been sent out successfully. We will contact you as soon as possible.</p>
+                        <div class="okBtn">Alright</div>
+                  </div>
+            </div>
+            <section class="arvisual">
+                  <h1 class="topAr">Other services</h1>
+                  <p class="text">Whether you plan on providing unforgettable customer experience utilizing a custom Augmented Reality solutions
+                                  or you wish to impress your clients by embedding a 360° viewer / configurator on your website - head over to the
+                                  <a href="https://www.arvisual.eu/" target="_blank">AR Visual site</a> where you can familiarize yourself with all the different possibilities.</p>
+                  <div class="button"><a class="demoBtn" href="https://www.arvisual.eu/" target="_blank">Show me</a></div>
+            </section>
+            <section class="offices">
+                  <h1 class="header">Offices</h1>
+                  <div class="flexOffices">
+                        <div class="officeUnit">
+                              <div class="officeImg01"></div>
+                              <p class="text">London<br>Warren st. 12 A</p>
+                        </div>
+                        <div class="officeUnit">
+                              <div class="officeImg02"></div>
+                              <p class="text">Prague<br>Jindřišská 16</p>
+                        </div>
+                        <div class="officeUnit">
+                              <div class="officeImg03"></div>
+                              <p class="text">Bratislava<br>Staré Grunty 18</p>
+                        </div>
+                  </div>
+            </section>
+      </main>
+      <footer>
+            <div class="flexFoot">
+                  <div class="footUnit">
+                        <h1 class="header">NAVIGATION</h1>
+                        <ul>
+                              <li><a href="demo">Request a demo</a></li>
+                              <li><a href="https://www.carat3d.com/">Home</a></li>
+                              <li><a href="https://www.carat3d.com/#aboutus">About us</a></li>
+                              <li><a href="https://www.arvisual.eu/" target="_blank">Augmented Reality</a></li>
+                        </ul>
+                  </div>
+                  <div class="footUnit right">
+                        <h1 class="header">CONTACT</h1>
+                        <ul>
+                              <li>CARAT3D by AR Visual Ltd.</li>
+                              <li>+44 20 3966 4939</li>
+                              <li>+421 918 040 212</li>
+                              <li>info@carat3d.com</li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="copyright" id="contact"><p class="text">&copy; 2019 - CARAT3D by AR Visual Ltd.</p></div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>

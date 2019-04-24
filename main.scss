@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', Helvetica, sans-serif;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
 //vars
@@ -52,8 +53,8 @@ body {
     }
   }
   ~ .nav-wrapper {
-    z-index: 9990;
-    opacity: 1;
+    z-index: 990;
+    display: block;
     ul li a {
       opacity: 1;
       transform: translateX(0);
@@ -145,46 +146,44 @@ nav ul {
         }
     }
 }
+//anchor settings general
+#aboutus{
+  position:absolute;
+  height:60px;
+  width:100%;
+  top: 540px;
+  pointer-events: none;
+}
+#services{
+  position: absolute;
+  height: 60px;
+  width: 100px;
+  top: 730px;
+  pointer-events: none;
+}
 
 //about us
 .about{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: $init;
     margin-right: $init;
+    margin-top: 40px;
     .header{
         text-align: center;
         &:nth-of-type(2){
-          margin-top: 0;
+          margin-top: 50px;
         }
     }
     .text{
         color: $gray;
         line-height: 1.6em;
     }
-    .downBtn{
-        text-align: center;
-        margin: 0 auto;
-        font-size: 1.5em;
-        color: gray;
-        margin-top: 35px;
-        margin-bottom: 30px;
-        a{
-          color: gray;
-          i{
-              transition-duration: .2s;
-              &:hover{
-                  color: #c1c1c1;
-                  cursor: pointer;
-              }
-          }
-       }
-    }
 }
-//360 viewer
-.wrapViewer{
-  width: 700px;
-  margin: 0 auto;
-}
+// //360 viewer
+// .wrapViewer{
+//   width: 700px;
+//   margin: 0 auto;
+// }
 //viewer logo
 .viewLogo{
   background: url('carat3d_logo.svg') no-repeat center;
@@ -210,6 +209,7 @@ nav ul {
   background-size: cover;
   width: 100%;
   text-align: center;
+  margin-top: 60px;
   .header{
     padding-top: 50px;
   }
@@ -350,7 +350,7 @@ nav ul {
         }
       }
       .blogImg02{
-        background: url('https://cdn-images-1.medium.com/max/800/1*D76O9RTdbID8fH2T_ZJ67Q.jpeg') no-repeat center;
+        background: url('https://cdn-images-1.medium.com/max/800/1*2YyZIdchL-xCb9s0tsIeoQ.jpeg') no-repeat center;
         background-size: cover;
         width: 100%;
         height: 280px;
@@ -366,6 +366,13 @@ nav ul {
         line-height: 1.6;
         color: $gray;
         margin-top: 10px;
+        .readMore{
+          color: $gold;
+          transition-duration: .2s;
+          &:hover{
+            color: gray;
+          }
+        }
       }
     }
   }
@@ -430,10 +437,7 @@ footer{
     padding-left: $init;
     padding-right: $init;
     .footUnit{
-      flex-basis: 33.33%;
-      &:nth-of-type(1){
-        margin-right: 100px;
-      }
+      flex-basis: 50%;
       .header{
         font-family: 'Montserrat', Helvetica, sans-serif;
         font-size: 1.07em;
@@ -469,7 +473,88 @@ footer{
   font-size: .9em;
   padding-bottom: 1px;
 }
-
+//demo
+.calendar{
+  margin-top: 40px;
+  form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    input{
+      height: 30px;
+    }
+    input, textarea{
+      margin-top: 20px;
+      padding-left: 10px;
+      border: none;
+    }
+    textarea{
+      padding-top: 8px;
+      resize: none;
+    }
+    div{
+      margin-top: 30px;
+      margin-bottom: 10px;
+      #gdpr{
+        margin: 0;
+        height: initial;
+        margin-right: 10px;
+      }
+      .gdpr{
+        color: white;
+        a{
+          color: $gold;
+          text-decoration: none;
+          transition-duration: 0.2s;
+          &:hover{
+            opacity: .8;
+          }
+        }
+      }
+    }
+    #submit{
+      background: $gold;
+      color: white;
+      width: 120px;
+      border: none;
+      border-radius: 50px;
+      margin: 0 auto;
+      margin-top: 15px;
+      transition-duration: .2s;
+      font-size: 1em;
+      height: 35px;
+      &:hover{
+        width: 136px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//success alert
+.successAlert{
+  display: none;
+  padding-bottom: 40px;
+  .header{
+    padding-top: 20px;
+  }
+  .okBtn{
+    background: $gold;
+    width: 120px;
+    margin: 0 auto;
+    font-size: 1;
+    color: white;
+    padding: 10px 30px 9px 30px;
+    transition-duration: .2s;
+    border-radius: 50px;
+    margin-top: 30px;
+    &:hover{
+      width: 136px;
+      cursor: pointer;
+    }
+  }
+}
 
 ////////////////////////////MEDIAQUERIES////////////////////////////
 ////////////////////////////MEDIAQUERIES////////////////////////////
@@ -491,19 +576,14 @@ footer{
     }
   }
 }
-@media screen and (max-width: 900px) {
-  footer{
-    .flexFoot{
-      .footUnit{
-        flex-basis: 50%;
-        &:nth-of-type(1){
-          display: none;
-        }
-      }
-    }
-  }
-}
 @media screen and (max-width: 930px) {
+  //anchor settings general
+  #aboutus{
+    top: 440px;
+  }
+  #services{
+    top: 660px;
+  }  
   .nav-wrapper {
     position: fixed;
     top: 0;
@@ -512,8 +592,8 @@ footer{
     height: 100%;
     z-index: -1;
     background: #fff;
-    opacity: 0;
     transition: all 0.2s ease;
+    display: none;
     ul {
       position: absolute;
       top: 50%;
@@ -580,6 +660,9 @@ footer{
         margin-top: 4px;
       }
     }
+  }
+  .logo{
+    margin-left: $mob;
   }
   //top content
   .topImg{
@@ -666,12 +749,15 @@ footer{
 }
 
 @media screen and (max-width: 535px) {
+    //anchor settings general
+    #aboutus{
+      top: 290px;
+    }
+    #services{
+      top: 620px;
+    }
   .about{
     margin-top: 0;
-    .downBtn{
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
   }
   .topImg{
     height: 350px;
@@ -764,10 +850,10 @@ footer{
     .flexFoot{
       .footUnit{
         &:nth-of-type(1){
-          flex-basis: 30%;
+          flex-basis: 40%;
         }
-        &:nth-of-type(3){
-          flex-basis: 70%;
+        &:nth-of-type(2){
+          flex-basis: 60%;
         }
       }
     }
@@ -779,7 +865,7 @@ footer{
       flex-direction: column;
       .footUnit{
         flex-basis: 50%;
-        &:nth-of-type(3){
+        &:nth-of-type(2){
           text-align: left;
           .header{
             padding-top: 0px;

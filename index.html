@@ -6,9 +6,11 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>CARAT3D - 3D modeling services and solutions</title>
       <link rel="stylesheet" href="main.css">
+      <link rel="shortcut icon" href="imgs/favicon.png">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:800" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
       <div class="container">
@@ -24,10 +26,10 @@
                   </div>
                   <div class="nav-wrapper">
                         <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#">Services</a></li>
-                              <li><a href="#">Request a demo</a></li>
-                              <li><a href="#contact">Contact</a></li>
+                              <li><a href="https://www.carat3d.com/">Home</a></li>
+                              <li><a href="#services" class="close">Services</a></li>
+                              <li><a href="demo">Request a demo</a></li>
+                              <li><a href="#contact" class="close">Contact</a></li>
                         </ul>
                   </div>
             </nav>
@@ -38,25 +40,26 @@
                         <h1 class="topHead">3D modeling<br> services</h1>
                         <p class="topSubhead">Premium 3D modeling services for high-&NoBreak;end<br> furniture and home decor companies.</p>
                   </div>
+                  <div id="aboutus"></div>
             </div>
             <div class="about">
                   <h1 class="header">About us</h1>
                   <p class="text">CARAT3D is a sub-brand of AR Visual Ltd that aims to provide a premium quality 3D modeling services
                                   for high-end companies in furniture and home decor industries. Our client base consists of high-profile
                                   furniture and design companies that are working with architects and inteior designers. </p>
-                  <div class="downBtn" id="down"><a href="#services"><i class="fas fa-chevron-down"></i></a></div>
-                  <h1 class="header" id="services">Our services</h1>
+                  <div id="services"></div>
+                  <h1 class="header">Our services</h1>
                   <p class="text">Having the background in Augmented Reality is a huge advantage for our team, as the process of creating
                         the final 3D model is streamlined, organized and optimized in a way so that the quality and performance are in the
                         perfect balance. Also having experience with a broad spectrum of clients allows us to better regognize, understand
                          and fulfill the needs of a particular client.
                   </p>
             </div>
-            <!-- 360 -->
+            <!--
             <div class="wrapViewer"><iframe id="viewer" src="https://www.zbinski.eu/ar-visual/" frameborder="none" scrolling="no" width="700px" height="500px"></iframe></div>
             <div class="viewLogo"></div>
             <p class="viewInfo">&copy; 2019 AR Visual Ltd.</p>
-            <!-- 360 end -->
+            -->
             <div class="wrapDemo">
                   <h1 class="header">Impactful visuals</h1>
                   <p class="text">It is of utmost importance for us to deliver flawless services, as we fully
@@ -65,7 +68,7 @@
                               With more than 15 years of experience in 3D modeling and Augmented
                               Reality field, we employ a&nbsp;structured and flexible process that allows us
                               to facilitate the clients goals and cater to his unique needs.</p>
-                  <div class="button"><a class="demoBtn">Request a demo</a></div>
+                  <div class="button"><a class="demoBtn" href="demo">Request a demo</a></div>
             </div>
             <div class="wrapClients">
                   <h1 class="header">Our clients</h1>
@@ -86,14 +89,14 @@
             <section class="blog">
                   <div class="blogFlex">
                         <div class="blogUnit">
-                              <a href="https://medium.com/@ARVISUAL/what-is-augmented-reality-and-what-it-most-certainly-isnt-a85eb68c13ce"><div class="blogImg01"></div></a>
+                              <a href="https://medium.com/@ARVISUAL/what-is-augmented-reality-and-what-it-most-certainly-isnt-a85eb68c13ce" target="_blank"><div class="blogImg01"></div></a>
                               <h1 class="header">What is Augmented Reality and how to utilize it?</h1>
-                              <p class="text">People often get confused when it comes to the topic of Augmented Reality and its use in furniture and home decor business. That is why we decided to...</p>
+                              <p class="text">People often get confused when it comes to the topic of Augmented Reality and its use in furniture and home decor business. That is why we decided to... <a href="https://medium.com/@ARVISUAL/what-is-augmented-reality-and-what-it-most-certainly-isnt-a85eb68c13ce" target="_blank" class="readMore">Read more</a></p>
                         </div>
                         <div class="blogUnit">
-                              <a href="#"><div class="blogImg02"></div></a>
-                              <h1 class="header">Save money by getting 3D models instead of photos</h1>
-                              <p class="text">Getting 3D models of your products is not only cheaper in the long run, but also provides unlimited possibilities when it comes to marketing and visuals...</p>
+                              <a href="https://medium.com/@ARVISUAL/augmented-reality-and-communication-with-clients-5510e77a1391" target="_blank"><div class="blogImg02"></div></a>
+                              <h1 class="header">Augmented Reality and communication with clients</h1>
+                              <p class="text">To successfully convey the message or the idea to your client without misunderstanding of some sort can sometimes be a truly difficult task. Imagine having... <a href="https://medium.com/@ARVISUAL/augmented-reality-and-communication-with-clients-5510e77a1391" target="_blank" class="readMore">Read more</a></p>
                         </div>
                   </div>
             </section>
@@ -118,21 +121,12 @@
       <footer>
             <div class="flexFoot">
                   <div class="footUnit">
-                        <h1 class="header">SERVICES</h1>
-                        <ul>
-                              <li><a href="#">3D modeling & renders</a></li>
-                              <li><a href="#">360° viewer & configurator</a></li>
-                              <li><a href="#">AR quick look</a></li>
-                              <li><a href="https://www.arvisual.eu/" target="_blank">Augmented Reality</a></li>
-                        </ul>
-                  </div>
-                  <div class="footUnit">
                         <h1 class="header">NAVIGATION</h1>
                         <ul>
-                              <li><a href="#">Request a demo</a></li>
+                              <li><a href="demo">Request a demo</a></li>
                               <li><a href="https://www.carat3d.com/">Home</a></li>
-                              <li><a href="#">About us</a></li>
-                              <li><a href="#">Our services</a></li>
+                              <li><a href="#aboutus">About us</a></li>
+                              <li><a href="https://www.arvisual.eu/" target="_blank">Augmented Reality</a></li>
                         </ul>
                   </div>
                   <div class="footUnit right">
@@ -147,5 +141,6 @@
             </div>
             <div class="copyright" id="contact"><p class="text">&copy; 2019 - CARAT3D by AR Visual Ltd.</p></div>
       </footer>
+      <script src="main.js"></script>
 </body>
 </html>

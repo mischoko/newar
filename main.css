@@ -3,6 +3,7 @@
           box-sizing: border-box;
   font-family: 'Montserrat', Helvetica, sans-serif;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 h1, h2 {
@@ -56,8 +57,8 @@ body {
 }
 
 #nav:checked ~ .nav-wrapper {
-  z-index: 9990;
-  opacity: 1;
+  z-index: 990;
+  display: block;
 }
 
 #nav:checked ~ .nav-wrapper ul li a {
@@ -166,10 +167,27 @@ nav ul li a:hover {
   margin-top: 15px;
 }
 
+#aboutus {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 540px;
+  pointer-events: none;
+}
+
+#services {
+  position: absolute;
+  height: 60px;
+  width: 100px;
+  top: 730px;
+  pointer-events: none;
+}
+
 .about {
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: 18%;
   margin-right: 18%;
+  margin-top: 40px;
 }
 
 .about .header {
@@ -177,40 +195,12 @@ nav ul li a:hover {
 }
 
 .about .header:nth-of-type(2) {
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .about .text {
   color: #808080;
   line-height: 1.6em;
-}
-
-.about .downBtn {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.5em;
-  color: gray;
-  margin-top: 35px;
-  margin-bottom: 30px;
-}
-
-.about .downBtn a {
-  color: gray;
-}
-
-.about .downBtn a i {
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-.about .downBtn a i:hover {
-  color: #c1c1c1;
-  cursor: pointer;
-}
-
-.wrapViewer {
-  width: 700px;
-  margin: 0 auto;
 }
 
 .viewLogo {
@@ -238,6 +228,7 @@ nav ul li a:hover {
   background-size: cover;
   width: 100%;
   text-align: center;
+  margin-top: 60px;
 }
 
 .wrapDemo .header {
@@ -423,7 +414,7 @@ nav ul li a:hover {
 }
 
 .blog .blogFlex .blogUnit .blogImg02 {
-  background: url("https://cdn-images-1.medium.com/max/800/1*D76O9RTdbID8fH2T_ZJ67Q.jpeg") no-repeat center;
+  background: url("https://cdn-images-1.medium.com/max/800/1*2YyZIdchL-xCb9s0tsIeoQ.jpeg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 280px;
@@ -443,6 +434,16 @@ nav ul li a:hover {
   line-height: 1.6;
   color: #808080;
   margin-top: 10px;
+}
+
+.blog .blogFlex .blogUnit .text .readMore {
+  color: #d4af67;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.blog .blogFlex .blogUnit .text .readMore:hover {
+  color: gray;
 }
 
 .offices {
@@ -533,12 +534,8 @@ footer .flexFoot {
 }
 
 footer .flexFoot .footUnit {
-  -ms-flex-preferred-size: 33.33%;
-      flex-basis: 33.33%;
-}
-
-footer .flexFoot .footUnit:nth-of-type(1) {
-  margin-right: 100px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 footer .flexFoot .footUnit .header {
@@ -581,6 +578,110 @@ footer .flexFoot .right ul > li {
   padding-bottom: 1px;
 }
 
+.calendar {
+  margin-top: 40px;
+}
+
+.calendar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.calendar form input {
+  height: 30px;
+}
+
+.calendar form input, .calendar form textarea {
+  margin-top: 20px;
+  padding-left: 10px;
+  border: none;
+}
+
+.calendar form textarea {
+  padding-top: 8px;
+  resize: none;
+}
+
+.calendar form div {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.calendar form div #gdpr {
+  margin: 0;
+  height: initial;
+  margin-right: 10px;
+}
+
+.calendar form div .gdpr {
+  color: white;
+}
+
+.calendar form div .gdpr a {
+  color: #d4af67;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.calendar form div .gdpr a:hover {
+  opacity: .8;
+}
+
+.calendar form #submit {
+  background: #d4af67;
+  color: white;
+  width: 120px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 15px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  font-size: 1em;
+  height: 35px;
+}
+
+.calendar form #submit:hover {
+  width: 136px;
+  cursor: pointer;
+}
+
+.successAlert {
+  display: none;
+  padding-bottom: 40px;
+}
+
+.successAlert .header {
+  padding-top: 20px;
+}
+
+.successAlert .okBtn {
+  background: #d4af67;
+  width: 120px;
+  margin: 0 auto;
+  font-size: 1;
+  color: white;
+  padding: 10px 30px 9px 30px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.successAlert .okBtn:hover {
+  width: 136px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1100px) {
   .blog .blogFlex .blogUnit .blogImg01, .blog .blogFlex .blogUnit .blogImg02 {
     height: 200px;
@@ -591,17 +692,13 @@ footer .flexFoot .right ul > li {
   }
 }
 
-@media screen and (max-width: 900px) {
-  footer .flexFoot .footUnit {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  footer .flexFoot .footUnit:nth-of-type(1) {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 930px) {
+  #aboutus {
+    top: 440px;
+  }
+  #services {
+    top: 660px;
+  }
   .nav-wrapper {
     position: fixed;
     top: 0;
@@ -610,9 +707,9 @@ footer .flexFoot .right ul > li {
     height: 100%;
     z-index: -1;
     background: #fff;
-    opacity: 0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
+    display: none;
   }
   .nav-wrapper ul {
     position: absolute;
@@ -686,6 +783,9 @@ footer .flexFoot .right ul > li {
   }
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
+  }
+  .logo {
+    margin-left: 8%;
   }
   .topImg {
     height: 500px;
@@ -765,12 +865,14 @@ footer .flexFoot .right ul > li {
 }
 
 @media screen and (max-width: 535px) {
+  #aboutus {
+    top: 290px;
+  }
+  #services {
+    top: 620px;
+  }
   .about {
     margin-top: 0;
-  }
-  .about .downBtn {
-    margin-top: 20px;
-    margin-bottom: 15px;
   }
   .topImg {
     height: 350px;
@@ -848,12 +950,12 @@ footer .flexFoot .right ul > li {
     padding-bottom: 35px;
   }
   footer .flexFoot .footUnit:nth-of-type(1) {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
-  footer .flexFoot .footUnit:nth-of-type(3) {
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+  footer .flexFoot .footUnit:nth-of-type(2) {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
 }
 
@@ -868,10 +970,10 @@ footer .flexFoot .right ul > li {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  footer .flexFoot .footUnit:nth-of-type(3) {
+  footer .flexFoot .footUnit:nth-of-type(2) {
     text-align: left;
   }
-  footer .flexFoot .footUnit:nth-of-type(3) .header {
+  footer .flexFoot .footUnit:nth-of-type(2) .header {
     padding-top: 0px;
   }
 }
