@@ -179,30 +179,6 @@ nav ul {
         line-height: 1.6em;
     }
 }
-// //360 viewer
-// .wrapViewer{
-//   width: 700px;
-//   margin: 0 auto;
-// }
-//viewer logo
-.viewLogo{
-  background: url('carat3d_logo.svg') no-repeat center;
-  background-size: cover;
-  width: 100px;
-  height: 15px;
-  position: absolute;
-  margin-top: -70px;
-  margin-left: $init;
-  z-index: 9999;
-}
-.viewInfo{
-  right: $init;
-  position: absolute;
-  font-size: .9em;
-  margin-top: -70px;
-  z-index: 99999;
-  color: $gray;
-}
 //demo section
 .wrapDemo{
   background: url('imgs/mainBg2.jpg') no-repeat center;
@@ -761,6 +737,7 @@ footer{
   }
   .topImg{
     height: 350px;
+    background-position: left;
     .topWrap{
       margin-top: 75px;
       .topHead{
@@ -775,9 +752,6 @@ footer{
         }
       }
     }
-  }
-  .wrapViewer{
-    margin-top: -60px;
   }
   .viewInfo, .viewLogo{
     margin-top: -50px;
