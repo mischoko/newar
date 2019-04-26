@@ -77,7 +77,7 @@ nav {
 
 .logo {
   float: left;
-  padding-top: 9px;
+  padding-top: 11px;
   margin-left: 16px;
   margin-top: 0px;
   a {
@@ -152,14 +152,14 @@ nav ul {
   position:absolute;
   height:60px;
   width:100%;
-  top: 540px;
+  top: 650px;
   pointer-events: none;
 }
 #services{
   position: absolute;
   height: 60px;
   width: 100px;
-  top: 730px;
+  top: 820px;
   pointer-events: none;
 }
 
@@ -210,23 +210,23 @@ nav ul {
       }
     }
     .exImg01{
-      background: url('https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=940') no-repeat center;
-      background-size: cover;
+      background: url('https://casarredo.co.za/wp-content/uploads/2018/05/FENDI-Casa-Brigitte-armchair.jpg') no-repeat center;
+      background-size: contain;
       margin-right: 1%;
     }
     .exImg02{
-      background: url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center;
-      background-size: cover;
+      background: url('imgs/sofa.jpg') no-repeat center;
+      background-size: contain;
       margin-left: 1%;
     }
     .exImg03{
-      background: url('https://images.pexels.com/photos/709767/pexels-photo-709767.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center;
-      background-size: cover;
+      background: url('imgs/table.jpg') no-repeat center;
+      background-size: contain;
       margin-right: 1%;
     }
     .exImg04{
-      background: url('https://images.pexels.com/photos/534172/pexels-photo-534172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center;
-      background-size: cover;
+      background: url('http://covetedition.com/wp-content/uploads/2017/03/7d50a9ed304672fe162a9b2ab89bb269.png') no-repeat center;
+      background-size: contain;
       margin-left: 1%;
     }
   }
@@ -337,34 +337,12 @@ nav ul {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    padding-bottom: 30px;
-    .client01{
-      background: url('clients/01.png') no-repeat center;
-      background-size: cover;
-      width: 55px;
-      height: 55px;
-    }
-    .client02{
-      background: url('clients/02.png') no-repeat center;
-      background-size: cover;
-      width: 55px;
-      height: 55px;
-      margin-left: 80px;
-      margin-right: 40px;
-    }
-    .client03{
-      background: url('clients/03.png') no-repeat center;
-      background-size: cover;
-      width: 55px;
-      height: 55px;
-      margin-left: 40px;
-      margin-right: 80px;
-    }
-    .client04{
-      background: url('clients/04.png') no-repeat center;
-      background-size: cover;
-      width: 55px;
-      height: 55px;
+    padding-bottom: 20px;
+    .clientList{
+      background: url('clients/clientlist.jpg') no-repeat center;
+      background-size: contain;
+      height: 70px;
+      width: 900px;
     }
   }
 }
@@ -409,6 +387,23 @@ nav ul {
       }
     }
   }
+}
+//video versace
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	height:0;
+  overflow:hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+  height:100%;  
 }
 //blog
 .blog{
@@ -642,6 +637,47 @@ footer{
     }
   }
 }
+//popup settings
+.popMain{
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba($color: #000000, $alpha: .8);
+  display: none;
+  .popImg{
+    position: absolute;
+    top: calc(50% + 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pop01{
+    background: url('https://casarredo.co.za/wp-content/uploads/2018/05/FENDI-Casa-Brigitte-armchair.jpg') no-repeat center;
+    background-size: contain;
+    width: 70%;
+    height: 800px;
+  }
+  .pop02{
+    background: url('imgs/sofa.jpg') no-repeat center;
+    background-size: contain;
+    width: 70%;
+    height: 800px;
+  }
+  .pop03{
+    background: url('imgs/table.jpg') no-repeat center;
+    background-size: contain;
+    width: 70%;
+    height: 800px;
+  }
+  .pop04{
+    background: url('http://covetedition.com/wp-content/uploads/2017/03/7d50a9ed304672fe162a9b2ab89bb269.png') no-repeat center;
+    background-size: contain;
+    width: 70%;
+    height: 800px;
+  }
+}
 
 ////////////////////////////MEDIAQUERIES////////////////////////////
 ////////////////////////////MEDIAQUERIES////////////////////////////
@@ -660,6 +696,13 @@ footer{
   }
 }
 @media screen and (max-width: 1100px) {
+  //anchor settings general
+  #aboutus{
+    top: 650px;
+  }
+  #services{
+    top: 850px;
+  }
   //blog settings
   .blog > .blogFlex > .blogUnit{
     .blogImg01, .blogImg02{
@@ -707,10 +750,10 @@ footer{
 @media screen and (max-width: 930px) {
   //anchor settings general
   #aboutus{
-    top: 440px;
+    top: 530px;
   }
   #services{
-    top: 660px;
+    top: 750px;
   }
   //nav
   .nav-wrapper {
@@ -881,10 +924,10 @@ footer{
 @media screen and (max-width: 535px) {
     //anchor settings general
     #aboutus{
-      top: 290px;
+      top: 390px;
     }
     #services{
-      top: 620px;
+      top: 690px;
     }
   .about{
     margin-top: 0;
@@ -938,19 +981,8 @@ footer{
     .header{
       margin-top: 5px;
     }
-    .flexWrapClients{
-      .client02{
-        margin-left: 40px;
-        margin-right: 20px;
-      }
-      .client03{
-        margin-left: 20px;
-        margin-right: 40px;
-      }
-      .client01, .client02, .client03, .client04{
-        height: 40px;
-        width: 40px;
-      }
+    .flexWrapClients > .clientList{
+      height: 55px;
     }
   }
   .arvisual{
@@ -1060,6 +1092,14 @@ footer{
   .process > .processFlex > .processUnit{
     h1{
       font-size: 1.8em;
+    }
+  }
+  .wrapClients {
+    .header{
+      margin-bottom: 0;
+    }
+    .flexWrapClients{
+      padding-bottom: 15px;
     }
   }
   .arvisual{

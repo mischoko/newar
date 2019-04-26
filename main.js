@@ -29,3 +29,34 @@ $('.okBtn').on('click', function(){
 $('.close').on('click', function(){
     $('.nav-btn').trigger('click');
 });
+
+//popup functionality
+$('.popImg').hide();
+$('.exImg01, .exImg02, .exImg03, .exImg04').on('click', function(){
+    $(this).addClass('clicked');
+    var check01 = $('.clicked').hasClass('exImg01')
+    var check02 = $('.clicked').hasClass('exImg02')
+    var check03 = $('.clicked').hasClass('exImg03')
+    var check04 = $('.clicked').hasClass('exImg04')
+    switch(true){
+        case check01:
+        $('.pop01').show();
+        break;
+        case check02:
+        $('.pop02').show();
+        break;
+        case check03:
+        $('.pop03').show();
+        break;
+        case check04:
+        $('.pop04').show();
+        break;
+    }
+    $('.popMain').show();
+});
+
+//closing popup
+$('.popMain').on('click', function(){
+    $('.popMain, .popImg').hide();
+    $('.hoverImg').removeClass('clicked');
+});
