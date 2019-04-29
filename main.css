@@ -272,7 +272,7 @@ nav ul li a:hover {
 }
 
 .examples .examFlex .exImg01 {
-  background: url("https://casarredo.co.za/wp-content/uploads/2018/05/FENDI-Casa-Brigitte-armchair.jpg") no-repeat center;
+  background: url("imgs/chairs.jpg") no-repeat center;
   background-size: contain;
   margin-right: 1%;
 }
@@ -290,7 +290,7 @@ nav ul li a:hover {
 }
 
 .examples .examFlex .exImg04 {
-  background: url("http://covetedition.com/wp-content/uploads/2017/03/7d50a9ed304672fe162a9b2ab89bb269.png") no-repeat center;
+  background: url("imgs/chairsofa.jpg") no-repeat center;
   background-size: contain;
   margin-left: 1%;
 }
@@ -325,6 +325,7 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 50px;
 }
 
 .process .processFlex .processUnit {
@@ -344,6 +345,30 @@ nav ul li a:hover {
           justify-content: center;
 }
 
+.process .processFlex .processUnit .processIcon01 {
+  background: url("imgs/process01.svg") no-repeat center;
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.process .processFlex .processUnit .processIcon02 {
+  background: url("imgs/process02.svg") no-repeat center;
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+.process .processFlex .processUnit .processIcon03 {
+  background: url("imgs/process03.svg") no-repeat center;
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+}
+
 .process .processFlex .processUnit h1 {
   font-size: 2em;
   margin: 20px 0px 8px 0px;
@@ -353,7 +378,7 @@ nav ul li a:hover {
 .process .processFlex .processUnit .text {
   margin-top: 0;
   line-height: 1.8em;
-  color: white;
+  color: #808080;
 }
 
 .process .processFlex .processUnit:nth-of-type(2) {
@@ -361,19 +386,104 @@ nav ul li a:hover {
   margin-right: 20px;
 }
 
-.process .processFlex .processImg01 {
-  background: url("imgs/01.jpg") no-repeat center;
-  background-size: cover;
+.separate {
+  background: #b5b5b5;
+  height: 1px;
+  width: 200px;
+  margin: 70px auto;
+  margin-top: 50px;
 }
 
-.process .processFlex .processImg02 {
-  background: url("imgs/02.jpg") no-repeat bottom;
-  background-size: cover;
+.formats {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.process .processFlex .processImg03 {
-  background: url("imgs/03.jpg") no-repeat center;
+.formats .wrapForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.formats .wrapForm div {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.formats .wrapForm a {
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.formats .wrapForm a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.formats .wrapForm .format01 {
+  background: url("imgs/formats/dwg.svg") no-repeat center;
   background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format02 {
+  background: url("imgs/formats/3ds.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format03 {
+  background: url("imgs/formats/gltf.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format04 {
+  background: url("imgs/formats/stl.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format05 {
+  background: url("imgs/formats/dae.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format06 {
+  background: url("imgs/formats/obj.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .wrapForm .format07 {
+  background: url("imgs/formats/fbx.svg") no-repeat center;
+  background-size: cover;
+  height: 65px;
+  width: 65px;
+}
+
+.formats .text {
+  line-height: 1.6em;
+  text-align: center;
+  color: #808080;
 }
 
 .wrapDemo {
@@ -749,6 +859,7 @@ footer .flexFoot .right ul > li {
   margin-top: 20px;
   padding-left: 10px;
   border: none;
+  border-radius: 6px;
 }
 
 .calendar form textarea {
@@ -848,7 +959,7 @@ footer .flexFoot .right ul > li {
 }
 
 .popMain .pop01 {
-  background: url("https://casarredo.co.za/wp-content/uploads/2018/05/FENDI-Casa-Brigitte-armchair.jpg") no-repeat center;
+  background: url("imgs/chairs.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
   height: 800px;
@@ -869,7 +980,7 @@ footer .flexFoot .right ul > li {
 }
 
 .popMain .pop04 {
-  background: url("http://covetedition.com/wp-content/uploads/2017/03/7d50a9ed304672fe162a9b2ab89bb269.png") no-repeat center;
+  background: url("imgs/chairsofa.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
   height: 800px;
@@ -898,20 +1009,8 @@ footer .flexFoot .right ul > li {
   .blog > .blogFlex > .blogUnit .blogImg01, .blog > .blogFlex > .blogUnit .blogImg02 {
     height: 200px;
   }
-  .examples > .trimg {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    height: 900px;
-  }
-  .examples > .trimg .exImg03 {
-    margin: 2% 0;
-    margin-bottom: 0;
-    background-position: left;
-  }
-  .examples > .trimg .exImg04 {
-    margin-left: 0;
+  .examples .examFlex {
+    height: 220px;
   }
   footer > .flexFoot {
     padding-left: 8%;
@@ -1096,7 +1195,7 @@ footer .flexFoot .right ul > li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 800px;
+    height: 550px;
   }
   .examples .duimg .exImg01 {
     margin: 0;
@@ -1104,6 +1203,13 @@ footer .flexFoot .right ul > li {
   }
   .examples .duimg .exImg02 {
     margin: 0;
+  }
+  .examples .duimg .exImg01, .examples .duimg .exImg04, .examples .duimg .exImg02, .examples .duimg .exImg03 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .examples .duimg .exImg03 {
+    margin-bottom: 30px;
   }
   .popMain > .popImg {
     width: 100%;
@@ -1265,11 +1371,14 @@ footer .flexFoot .right ul > li {
   .process > .processFlex > .processUnit h1 {
     font-size: 1.8em;
   }
+  .wrapClients {
+    padding-top: 0;
+  }
   .wrapClients .header {
     margin-bottom: 0;
   }
   .wrapClients .flexWrapClients {
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
   .arvisual .topAr {
     font-size: 1.8em;
