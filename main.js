@@ -60,3 +60,10 @@ $('.popMain').on('click', function(){
     $('.popMain, .popImg').hide();
     $('.hoverImg').removeClass('clicked');
 });
+
+//contact special class off media query
+var width = $(document).width();
+if(width < 930){
+    $('.contContain').removeClass('contContain');
+    $('.highLight').removeClass('.highLight');
+}

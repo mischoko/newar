@@ -67,6 +67,25 @@ body {
           transform: translateX(0);
 }
 
+.contContain {
+  margin-left: 38px !important;
+}
+
+.contContain .highLight {
+  background: #d4af67;
+  padding: 8px 20px;
+  margin-top: -10px;
+  color: white;
+  font-weight: bold;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  border-radius: 50px;
+}
+
+.contContain .highLight:hover {
+  padding: 8px 30px;
+}
+
 .container {
   position: fixed;
   background: white;
@@ -1085,6 +1104,9 @@ footer .flexFoot .right ul > li {
   }
   .examples .duimg .exImg02 {
     margin: 0;
+  }
+  .popMain > .popImg {
+    width: 100%;
   }
   .arvisual .topAr {
     margin-top: 50px;

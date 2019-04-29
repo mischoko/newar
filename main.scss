@@ -61,6 +61,22 @@ body {
     }
   }
 }
+//contact highlight
+.contContain{
+  margin-left: 38px !important;
+  .highLight{
+    background: $gold;
+    padding: 8px 20px;
+    margin-top: -10px;
+    color: white;
+    font-weight: bold;
+    transition-duration: .2s;
+    border-radius: 50px;
+    &:hover{
+      padding: 8px 30px;
+    }
+  }
+}
 
 .container{
   position: fixed;
@@ -907,6 +923,9 @@ footer{
         margin: 0;
       }
     }
+  }
+  .popMain > .popImg{
+    width: 100%;
   }
   .arvisual{
     .topAr{
