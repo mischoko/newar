@@ -169,7 +169,10 @@ nav ul li a:hover {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 20%;
-  margin-top: 75px;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .topImg .topWrap .topHead {
@@ -657,7 +660,7 @@ nav ul li a:hover {
 }
 
 .blog .blogFlex .blogUnit .blogImg01 {
-  background: url("https://cdn-images-1.medium.com/max/800/1*Cb_CIL3YEA-Mg0SMSrcduw.jpeg") no-repeat center;
+  background: url("https://live.staticflickr.com/3727/9202894688_c758a372ae_k.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 280px;
@@ -962,28 +965,28 @@ footer .flexFoot .right ul > li {
   background: url("imgs/chairs.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
-  height: 800px;
+  height: 458px;
 }
 
 .popMain .pop02 {
   background: url("imgs/sofa.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
-  height: 800px;
+  height: 458px;
 }
 
 .popMain .pop03 {
   background: url("imgs/table.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
-  height: 800px;
+  height: 458px;
 }
 
 .popMain .pop04 {
   background: url("imgs/chairsofa.jpg") no-repeat center;
   background-size: contain;
   width: 70%;
-  height: 800px;
+  height: 458px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -994,8 +997,8 @@ footer .flexFoot .right ul > li {
 
 @media screen and (max-width: 1280px) {
   .process {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }
 
@@ -1013,8 +1016,8 @@ footer .flexFoot .right ul > li {
     height: 220px;
   }
   footer > .flexFoot {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
 
@@ -1133,24 +1136,28 @@ footer .flexFoot .right ul > li {
     margin-top: 4px;
   }
   .logo {
-    margin-left: 8%;
+    margin-left: 6%;
   }
   .topImg {
     height: 500px;
   }
   .topImg .topWrap {
-    margin-left: 8% !important;
+    margin-left: 6% !important;
   }
   .about, .headProcess, .examples {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
   .wrapDemo {
     background-position: bottom;
   }
+  .formats {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
   .arvisual, .blog {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }
 
@@ -1190,6 +1197,19 @@ footer .flexFoot .right ul > li {
     margin-top: 40px !important;
     margin-bottom: 40px !important;
   }
+  .separate {
+    display: none;
+  }
+  .formats .wrapForm {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  .formats .wrapForm a {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    margin-top: 20px;
+  }
   .examples .duimg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1218,14 +1238,14 @@ footer .flexFoot .right ul > li {
     margin-top: 50px;
   }
   .wrapDemo .text {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
   }
 }
 
 @media screen and (max-width: 535px) {
   #aboutus {
-    top: 390px;
+    top: 350px;
   }
   #services {
     top: 690px;
@@ -1245,7 +1265,7 @@ footer .flexFoot .right ul > li {
   }
   .topImg .topWrap .topSubhead {
     font-size: 1em;
-    margin-right: 8%;
+    margin-right: 6%;
     line-height: 1.6em;
   }
   .topImg .topWrap .topSubhead br {
@@ -1264,7 +1284,7 @@ footer .flexFoot .right ul > li {
   }
   .process .processFlex > .processUnit {
     max-width: unset;
-    padding: 5% 8%;
+    padding: 5% 6%;
   }
   .wrapDemo .header {
     padding-top: 30px;
@@ -1298,8 +1318,8 @@ footer .flexFoot .right ul > li {
     height: 200px;
   }
   .blog .blogFlex .blogUnit .header, .blog .blogFlex .blogUnit .text {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
   .offices {
     margin-top: 30px;
@@ -1330,6 +1350,13 @@ footer .flexFoot .right ul > li {
     margin-left: 0;
     margin-right: 0;
   }
+  .process > .processFlex .processUnit:last-of-type .text {
+    margin-bottom: 0;
+  }
+  .formats .wrapForm a .format01, .formats .wrapForm a .format02, .formats .wrapForm a .format03, .formats .wrapForm a .format04, .formats .wrapForm a .format05, .formats .wrapForm a .format06, .formats .wrapForm a .format07 {
+    height: 50px;
+    width: 50px;
+  }
   footer .flexFoot {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1351,8 +1378,8 @@ footer .flexFoot .right ul > li {
   }
   .calendar form {
     max-width: unset;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
   .calendar form div #gdpr {
     float: left;
@@ -1386,7 +1413,7 @@ footer .flexFoot .right ul > li {
     margin-bottom: 15px;
   }
   .wrapDemo .header {
-    margin-left: 8%;
+    margin-left: 6%;
     text-align: left;
     margin-bottom: 0;
   }

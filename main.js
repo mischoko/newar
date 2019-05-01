@@ -67,3 +67,11 @@ if(width < 930){
     $('.contContain').removeClass('contContain');
     $('.highLight').removeClass('.highLight');
 }
+
+//animation
+$(document).ready(function(){
+    setTimeout(function(){
+        $('.topWrap').css('opacity','1');
+        $('.topWrap').css("margin-top",'75px');
+    },300);
+ });
