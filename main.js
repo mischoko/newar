@@ -85,14 +85,44 @@ if(width < 930){
      $('.dropdown').slideUp(200);
  });
 
- //owl carousel
+ //owl carousel 01
  $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.testimonialCarousel').owlCarousel({
         center: true,
         loop: true,
         margin: 600,
         items: 1,
         autoplay: true,
         autoplayTimeout:25000,
+        dots: false,
     });
   });
+//arrows at first carousel
+var owl = $('.testimonialCarousel');
+$('.right-arrow').on('click',function(){
+  owl.trigger('next.owl.carousel');
+});
+$('.left-arrow').on('click',function(){
+  owl.trigger('prev.owl.carousel');
+});
+
+//owl carousel 02
+$(document).ready(function(){
+    $('.caseCarousel').owlCarousel({
+        center: true,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 8000,
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        items: 1,
+        margin: 0,
+        stagePadding: 30,
+        smartSpeed: 450,
+    });
+});
+
+//removes placeholder when :focus is in newsletter email input
+$('#email').focus(function(){
+    $(this).removeAttr('placeholder');
+});
