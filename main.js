@@ -71,19 +71,26 @@ if(width < 930){
     });
 };
 
+ //checks if the dropdown is open / normalizes the closing process
+    $('#solutions').on('click',function(){ 
+        var isopen = $('.dropdown').hasClass('open');
+        if (isopen == true){
+           $('.dropdown').removeClass('open');
+        }
+    });
+
  //dropdown menu functionality
- $('#solutions').on('click',function(){
-    $('.fa-sort-down').toggleClass('rotate')
-    $('.dropdown').slideToggle(200).css('display','flex');
-    setTimeout(() => {
-        $('.net').show();
-    }, 300);
- });
- $('.net').on('click',function(){
-     $(this).hide();
-     $('.fa-sort-down').toggleClass('rotate')
-     $('.dropdown').slideUp(200);
- });
+    $('#solutions').on('click',function(){
+        $('.fa-sort-down').toggleClass('rotate');
+        $('.dropdown').slideToggle(200).css('display','flex').addClass('open');
+        $('.net').toggleClass('seen');
+    });
+ 
+    $('.net').on('click',function(){
+        $(this).removeClass('seen');
+        $('.fa-sort-down').toggleClass('rotate');
+        $('.dropdown').slideUp(200);
+    });
 
  //owl carousel 01
  $(document).ready(function(){
