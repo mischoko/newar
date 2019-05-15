@@ -117,7 +117,7 @@ $(document).ready(function(){
         animateIn: 'flipInX',
         items: 1,
         margin: 0,
-        stagePadding: 30,
+        stagePadding: 3,
         smartSpeed: 450,
     });
 });
@@ -125,4 +125,11 @@ $(document).ready(function(){
 //removes placeholder when :focus is in newsletter email input
 $('#email').focus(function(){
     $(this).removeAttr('placeholder');
+});
+
+//top calc for arrows
+$(document).ready(function(){
+    var top = $('.cliLogos').offset().top;
+    var fintop = top - 185;
+    $('.arwz').css('top', fintop + 'px');
 });

@@ -345,36 +345,42 @@ nav ul {
   margin-top: 35px;
 }
 //next back buttons
-.right-arrow{
+.arwz{
   position: absolute;
-  right: 30%;
-  margin-top: 165px;
-  color: $gray;
-  font-size: 1.5em;
   z-index: 55;
-  transition-duration: .25s;
-  &:hover{
-    color: #acacac;
-    cursor: pointer;
+  margin: 0 auto;
+  width: 780px;
+  top: 1020px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  .right-arrow{
+    float: right;
+    color: $gray;
+    font-size: 1.5em;
+    z-index: 55;
+    transition-duration: .25s;
+    &:hover{
+      color: #acacac;
+      cursor: pointer;
+    }
+    &:active{
+      color: $dark;
+    }
   }
-  &:active{
-    color: $dark;
-  }
-}
-.left-arrow{
-  position: absolute;
-  left: 30%;
-  margin-top: 165px;
-  color: $gray;
-  font-size: 1.5em;
-  z-index: 55;
-  transition-duration: .25s;
-  &:hover{
-    color: #acacac;
-    cursor: pointer;
-  }
-  &:active{
-    color: $dark;
+  .left-arrow{
+    float: left;
+    color: $gray;
+    font-size: 1.5em;
+    z-index: 55;
+    transition-duration: .25s;
+    &:hover{
+      color: #acacac;
+      cursor: pointer;
+    }
+    &:active{
+      color: $dark;
+    }
   }
 }
 //testimonials
@@ -977,12 +983,17 @@ footer{
   .process > .processFlex > .processUnit > h1{
     font-size: 1.5em;
   }
+  .quote{
+    left: 30%;
+  }
 }
-@media screen and (max-width: 1280px) {
-  //process adjustments
+@media screen and (max-width: 1400px) {
   .process{
-    margin-left: $mob;
-    margin-right: $mob;
+    padding-left: $mob;
+    padding-right: $mob;
+  }
+  .quote{
+    left: 27%;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -992,12 +1003,25 @@ footer{
       height: 200px;
     }
   }
-
+  .quote{
+    left: 22%;
+  }
+  //case carousel restriction of width
+  .caseCarousel{
+    .cases{
+      max-width: 650px;
+    }
+  }
   //footer settings
   footer > .flexFoot{
     padding-left: $mob;
     padding-right: $mob;
-  }  
+  } 
+  //blog item padding settings
+  .blog{
+    padding-left: $mob;
+    padding-right: $mob;
+  }
 }
 @media screen and (max-width: 980px) {
   //process flex direction column
@@ -1020,8 +1044,19 @@ footer{
   .pink{
     color: $pink !important;
   }
+  .quote{
+    left: 18%;
+  }
 }
 @media screen and (max-width: 930px) {
+  //quote icon fix
+  .quote{
+    left: 16%;
+  }
+  //display none for arrows at testimonials
+  .arwz{
+    display: none;
+  }
   //rotate arrow
   .rotate{
     transform: rotate(180deg) translateY(-2px) translateX(1px);
@@ -1131,11 +1166,6 @@ footer{
   }
   .wrapDemo{
     background-position: bottom;
-  }
-  //reference arvisual
-  .arvisual, .blog{
-    margin-left: $mob;
-    margin-right: $mob;
   }
 }
 @media screen and (max-width: 800px) {

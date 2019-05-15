@@ -424,10 +424,20 @@ nav ul li a:hover {
   margin-top: 35px;
 }
 
-.right-arrow {
+.arwz {
   position: absolute;
-  right: 30%;
-  margin-top: 165px;
+  z-index: 55;
+  margin: 0 auto;
+  width: 780px;
+  top: 1020px;
+  height: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.arwz .right-arrow {
+  float: right;
   color: #808080;
   font-size: 1.5em;
   z-index: 55;
@@ -435,19 +445,17 @@ nav ul li a:hover {
           transition-duration: .25s;
 }
 
-.right-arrow:hover {
+.arwz .right-arrow:hover {
   color: #acacac;
   cursor: pointer;
 }
 
-.right-arrow:active {
+.arwz .right-arrow:active {
   color: #1a1a1a;
 }
 
-.left-arrow {
-  position: absolute;
-  left: 30%;
-  margin-top: 165px;
+.arwz .left-arrow {
+  float: left;
   color: #808080;
   font-size: 1.5em;
   z-index: 55;
@@ -455,12 +463,12 @@ nav ul li a:hover {
           transition-duration: .25s;
 }
 
-.left-arrow:hover {
+.arwz .left-arrow:hover {
   color: #acacac;
   cursor: pointer;
 }
 
-.left-arrow:active {
+.arwz .left-arrow:active {
   color: #1a1a1a;
 }
 
@@ -1251,12 +1259,18 @@ footer .flexFoot .right ul > li {
   .process > .processFlex > .processUnit > h1 {
     font-size: 1.5em;
   }
+  .quote {
+    left: 30%;
+  }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
   .process {
-    margin-left: 6%;
-    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .quote {
+    left: 27%;
   }
 }
 
@@ -1264,7 +1278,17 @@ footer .flexFoot .right ul > li {
   .blog > .blogFlex > .blogUnit .blogImg01, .blog > .blogFlex > .blogUnit .blogImg02 {
     height: 200px;
   }
+  .quote {
+    left: 22%;
+  }
+  .caseCarousel .cases {
+    max-width: 650px;
+  }
   footer > .flexFoot {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .blog {
     padding-left: 6%;
     padding-right: 6%;
   }
@@ -1293,9 +1317,18 @@ footer .flexFoot .right ul > li {
   .pink {
     color: #e50872 !important;
   }
+  .quote {
+    left: 18%;
+  }
 }
 
 @media screen and (max-width: 930px) {
+  .quote {
+    left: 16%;
+  }
+  .arwz {
+    display: none;
+  }
   .rotate {
     -webkit-transform: rotate(180deg) translateY(-2px) translateX(1px);
             transform: rotate(180deg) translateY(-2px) translateX(1px);
@@ -1408,10 +1441,6 @@ footer .flexFoot .right ul > li {
   }
   .wrapDemo {
     background-position: bottom;
-  }
-  .arvisual, .blog {
-    margin-left: 6%;
-    margin-right: 6%;
   }
 }
 
