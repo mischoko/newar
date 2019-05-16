@@ -1714,4 +1714,63 @@ footer .footNav ul li a {
     margin-top: 10px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+.topImg {
+  background: white;
+  -webkit-box-shadow: -5px -2px 17px rgba(0, 0, 0, 0.17);
+          box-shadow: -5px -2px 17px rgba(0, 0, 0, 0.17);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.topImg .topWrap {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.topImg .topWrap .topHead {
+  color: #e50872;
+}
+
+.topImg .topWrap .topSubhead {
+  font-size: 1em;
+  color: #808080;
+}
+
+.topImg .ARimg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 500px;
+  height: 500px;
+  background: black;
+  margin-right: 16%;
+  margin-left: 20px;
+}
+
+.process {
+  padding-top: 30px;
+  margin-top: -15px;
+}
+
+.process .processFlex {
+  margin-top: 50px;
+}
+
+.process .processFlex .processUnit {
+  margin-top: 0;
+  padding-bottom: 30px;
+}
+
+.process .processFlex .processUnit h1 {
+  color: #e50872;
+  font-size: 1.5em;
+}
+
+.process .vidText {
+  color: #808080;
+  line-height: 1.8em;
+  text-align: center;
+}
+/*# sourceMappingURL=services.css.map */
