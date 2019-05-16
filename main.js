@@ -86,7 +86,7 @@ if(width < 930){
         $('.net').toggleClass('seen');
     });
  
-    $('.net').on('click',function(){
+    $('.net, .nav-btn').on('click',function(){
         $(this).removeClass('seen');
         $('.fa-sort-down').toggleClass('rotate');
         $('.dropdown').slideUp(200);

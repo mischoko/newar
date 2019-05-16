@@ -7,6 +7,10 @@
   scroll-behavior: smooth;
 }
 
+.preload {
+  display: none;
+}
+
 h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
@@ -605,7 +609,7 @@ nav ul li a:hover {
 }
 
 .owl-carousel .cases .csImg1 {
-  background: url("https://www.tuli.sk/sub/tuli.sk/images/images/blog/detka-utulnicka/tuli_jesen_zima_56.jpg") no-repeat center;
+  background: url("imgs/tuli.jpg") no-repeat center;
   background-size: cover;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1437,7 +1441,7 @@ footer .footNav ul li a {
   .caseCarousel > .owl-stage-outer > .owl-stage > .owl-item > .cases .csImg1, .caseCarousel > .owl-stage-outer > .owl-stage > .owl-item > .cases .csImg2, .caseCarousel > .owl-stage-outer > .owl-stage > .owl-item > .cases .csImg3 {
     -ms-flex-preferred-size: unset;
         flex-basis: unset;
-    height: 300px;
+    height: 160px;
     width: 100%;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0;

@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+//preloading hidden
+.preload{
+  display: none;
+}
+
 //vars
 $init: 16%;
 $mob: 6%;
@@ -476,7 +481,7 @@ nav ul {
     margin-top: 70px;
     margin-bottom: 10px;
     .csImg1{
-      background: url('https://www.tuli.sk/sub/tuli.sk/images/images/blog/detka-utulnicka/tuli_jesen_zima_56.jpg')no-repeat center;
+      background: url('imgs/tuli.jpg')no-repeat center;
       background-size: cover;
       flex-basis: 50%;
       border-bottom-left-radius: 15px;
@@ -1152,7 +1157,7 @@ footer{
     margin-top: 20px;
     .csImg1, .csImg2, .csImg3{
       flex-basis: unset;
-      height: 300px;
+      height: 160px;
       width: 100%;
       border-top-right-radius: 15px;
       border-bottom-left-radius: 0;
@@ -1326,6 +1331,7 @@ footer{
     background-size: contain;
     height: 300px;
   }
+
   //fix on last process unit
   .process > .processFlex {
     .processUnit{
