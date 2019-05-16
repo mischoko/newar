@@ -69,7 +69,7 @@ if(width < 930){
     $('#solutions').on('click',function(){
         $(this).toggleClass('pink');
     });
-};
+}
 
  //checks if the dropdown is open / normalizes the closing process
     $('#solutions').on('click',function(){ 
@@ -123,7 +123,7 @@ $(document).ready(function(){
         animateOut: 'slideOutDown',
         animateIn: 'flipInX',
         items: 1,
-        margin: 0,
+        margin: 1600,
         stagePadding: 3,
         smartSpeed: 450,
     });

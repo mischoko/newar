@@ -766,11 +766,11 @@ nav ul {
             color: gray;
           }
         }
-        .mobReadMore{
-          display: none;
-        }
       }
     }
+  }
+  .mobReadMore{
+    display: none;
   }
 }
 //request a demo section
@@ -790,6 +790,9 @@ nav ul {
     padding-top: 30px;
     margin-bottom: 10px;
     color: white;
+    br{
+      display: none;
+    }
   }
   p{
     color: white;
@@ -916,6 +919,10 @@ footer{
     padding-left: $mob;
     padding-right: $mob;
   }
+  //client section
+  .cliLogos{
+    max-width: unset;
+  }
   .quote{
     left: 27%;
   }
@@ -973,8 +980,14 @@ footer{
     }
   }
   //clients header
+  .cliHeader{
+    margin-top: 40px;
+  }
+  //pink for menu
   .pink{
     color: $pink !important;
+    font-weight: bold;
+    margin: 0;
   }
   .quote{
     left: 18%;
@@ -995,6 +1008,12 @@ footer{
       font-size: 1em;
     }
   }
+  //client section
+  .cliLogos{
+    background: url('imgs/clients_l.jpg')no-repeat center;
+    background-size: cover;
+    max-width: unset;
+  }
   //quote icon fix
   .quote{
     left: 16%;
@@ -1012,6 +1031,7 @@ footer{
     margin-top: 43px;
     box-shadow: none;
     a{
+      color: $pink;
       &:hover{
         background: initial;
       }
@@ -1112,6 +1132,66 @@ footer{
   }
 }
 @media screen and (max-width: 800px) {
+  //testimonial carousel flexed to column
+  .testimonialCarousel > .owl-stage-outer > .owl-stage > .owl-item > .testimonial{
+    flex-direction: column;
+    width: 93%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 35px;
+    box-shadow: 0px -2px 17px rgba(0, 0, 0, 0.17);
+    .txtPart{
+      margin-top: 10px;
+    }
+  }
+  //cases carpise; fixed to column
+  .caseCarousel > .owl-stage-outer > .owl-stage > .owl-item > .cases{
+    flex-direction: column;
+    width: 93%;
+    box-shadow: 0px -2px 17px rgba(0, 0, 0, 0.17);
+    margin-top: 20px;
+    .csImg1, .csImg2, .csImg3{
+      flex-basis: unset;
+      height: 300px;
+      width: 100%;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0;
+    }
+    .txtPart{
+      padding-left: 20px;
+      padding-right: 20px;
+      h1{
+        font-size: 1.5em;
+      }
+    }
+  }
+  //dots edit
+  .owl-theme > .owl-dots > .owl-dot{
+    margin: 0 15px;
+  }
+  //client header
+  .cliHeader{
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  //client logos
+  .cliLogos{
+    background-size: contain;
+    height: 150px;
+  }
+  //newsletter
+  .newsletter{
+    padding-left: $mob;
+    padding-right: $mob;
+    h1{
+    font-size: 1.5em;
+    }
+    p{
+      br{
+        display: none;
+      }
+    }
+  }
   .blog{
     .blogHeader{
       margin-bottom: 0;
@@ -1137,6 +1217,7 @@ footer{
           }
         }
         .mobReadMore{
+          display: block;
           margin: 0 auto;
           color: $pink;
           transition-duration: .2s;
@@ -1161,12 +1242,14 @@ footer{
   }
   //footer
   footer > .footFlex{
+    margin-top: 0;
     flex-direction: column;
     .map{
       height: 300px;
       width: 88%;
       flex-basis: unset;
       margin: 0 auto;
+      margin-bottom: 50px;
     }
     .footInfo{
       .colInfo2{
@@ -1181,14 +1264,22 @@ footer{
   }
 }
 @media screen and (max-width: 640px) {
+  //topimg adjustment
   .topImg > .topWrap > .topHead{
     font-size: 2em;
+  }
+  //footer adjustment
+  footer > .footFlex{
+    .map{
+      margin-bottom: 0;
+    }
   }
 }
 @media screen and (max-width: 535px) {
   //top img
   .topImg{
-    height: 470px;
+    height: 290px;
+
   }
   //process edit
   .process {
@@ -1199,20 +1290,11 @@ footer{
     padding: 5% $mob;
     }
   }
-  .arvisual{
-    .topAr{
-      margin-top: 30px;
-      text-align: left;
-    }
-    .text{
-      text-align: left;
-    }
-  }
+  //blog edit
   .blog{
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    margin-top: 50px;
     .blogFlex{
       .blogUnit{
         .blogImg01, .blogImg02{
@@ -1225,6 +1307,10 @@ footer{
       }
     }
   }
+  //footer
+  footer > .footFlex > .map{
+    height: 240px;
+  }
 }
 @media screen and (max-width: 470px) {
   .topImg{
@@ -1233,6 +1319,12 @@ footer{
         font-size: 1.5em;
       }
     }
+  }
+  //client logos
+  .cliLogos{
+    background: url('imgs/clients_m.jpg')no-repeat center;
+    background-size: contain;
+    height: 300px;
   }
   //fix on last process unit
   .process > .processFlex {
@@ -1249,6 +1341,69 @@ footer{
           margin-bottom: 0;
         }
       }
+    }
+  }
+  //blog adjustments
+  .blog{
+    .blogFlex{
+      .blogUnit:nth-of-type(1){
+        margin-top: 30px !important;
+      }      
+    }
+    .blogHeader{
+      font-size: 1.5em;
+    }
+  }
+  //newsletter adjustments
+  .newsletter {
+    height: 520px;
+      #mc_embed_signup > form > #mc_embed_signup_scroll{
+      flex-direction: column;
+      .email{
+        margin-right: 0;
+      }
+      .clear{
+        margin-top: 20px;
+      }
+    }
+    .socialBar{
+      a{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.4em;
+      }
+    }
+  }
+  //demo adjustments
+  .requestDemo{
+    padding-left: $mob;
+    padding-right: $mob;
+    h1{
+      font-size: 1.5em;
+    }
+    p{
+      br{
+        display: none;
+      }
+    }
+  }
+  footer{
+    .footFlex{
+      .map{
+        height: 180px;
+      }
+    }
+    h1{
+      font-size: 1.5em;
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .requestDemo > h1{
+    margin-bottom: 0;
+    br{
+      display: block;
+      line-height: 1.4em;
     }
   }
 }
@@ -1285,11 +1440,22 @@ footer{
       margin-top: -75px;
     }
   }
-  .arvisual{
-    .topAr{
-      font-size: 1.8em;
-      text-align: left;
-      margin-bottom: 15px;
+  //demo
+  .requestDemo{
+    height: 400px;
+    h1{
+      padding-top: 20px;
+    }
+  }
+  footer{
+    h1{
+      padding-top: 30px;
+    }
+    .footFlex > .map{
+      height: 150px;
+      width: 95%;
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
   }
 }
