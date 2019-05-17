@@ -1744,7 +1744,7 @@ footer .footNav ul li a {
       flex-basis: 50%;
   width: 500px;
   height: 500px;
-  background: black;
+  background: #1a1a1a;
   margin-right: 16%;
   margin-left: 20px;
 }
@@ -1756,6 +1756,10 @@ footer .footNav ul li a {
 
 .process .processFlex {
   margin-top: 50px;
+}
+
+.process .processFlex:nth-of-type(2) {
+  margin-top: 0;
 }
 
 .process .processFlex .processUnit {
@@ -1772,5 +1776,351 @@ footer .footNav ul li a {
   color: #808080;
   line-height: 1.8em;
   text-align: center;
+}
+
+.process .videoCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.process .videoWrapper {
+  position: relative;
+  padding-bottom: 26.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  width: 50%;
+}
+
+.process .videoWrapper:nth-of-type(1) {
+  margin-right: 20px;
+}
+
+.process .videoWrapper:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.process .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.process .vidBtn {
+  margin-top: 40px;
+}
+
+.requestDemo {
+  height: 360px;
+}
+
+.requestDemo h1 {
+  padding-top: 15px;
+}
+
+.services {
+  padding-left: 16%;
+  padding-right: 16%;
+  padding-bottom: 30px;
+  z-index: 22;
+  position: relative;
+  width: 100%;
+  margin-top: -30px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: -5px -6px 17px rgba(0, 0, 0, 0.14);
+          box-shadow: -5px -6px 17px rgba(0, 0, 0, 0.14);
+}
+
+.services .servHeader {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 35px;
+}
+
+.services .AR {
+  border-radius: 15px;
+  background: white;
+  -webkit-box-shadow: -5px -6px 17px rgba(0, 0, 0, 0.14);
+          box-shadow: -5px -6px 17px rgba(0, 0, 0, 0.14);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.services .AR .imgAR {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: url("imgs/augmented-reality.jpg") no-repeat left;
+  background-size: cover;
+}
+
+.services .AR .textAR {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 30px 50px;
+}
+
+.services .AR .textAR h1 {
+  color: #e50872;
+  font-size: 2em;
+  line-height: 1.35em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services .AR .textAR p {
+  color: #808080;
+  line-height: 1.7em;
+}
+
+.services .AR .textAR h2 {
+  color: #e50872;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.services .AR .textAR ul {
+  color: #808080;
+  line-height: 2.3em;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.services .AR .textAR .compatibility {
+  margin-bottom: 0;
+}
+
+.services .AR .textAR .compatibility i {
+  font-size: 2em;
+}
+
+.services .AR .textAR .compatibility .fa-android {
+  -webkit-transform: translatey(6px);
+          transform: translatey(6px);
+}
+
+.services .AR .textAR .compatibility .fa-apple {
+  -webkit-transform: translatey(3px);
+          transform: translatey(3px);
+}
+
+.services .platformHeader {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 60px;
+  margin-bottom: 55px;
+}
+
+.services .platform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.services .platform .imgPlatform {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: url("imgs/augmented-reality.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.services .platform .textAR {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 30px 50px;
+}
+
+.services .platform .textAR h1 {
+  color: #e50872;
+  font-size: 2em;
+  line-height: 1.35em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services .platform .textAR p {
+  color: #808080;
+  line-height: 1.7em;
+}
+
+.services .platform .textAR h2 {
+  color: #e50872;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.services .platform .textAR ul {
+  color: #808080;
+  line-height: 2.3em;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.services .platform .textAR .compatibility {
+  margin-bottom: 0;
+}
+
+.services .platform .textAR .compatibility i {
+  font-size: 2em;
+}
+
+.services .platform .textAR .compatibility .fa-android {
+  -webkit-transform: translatey(6px);
+          transform: translatey(6px);
+}
+
+.services .platform .textAR .compatibility .fa-apple {
+  -webkit-transform: translatey(3px);
+          transform: translatey(3px);
+}
+
+.services .webAR {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 80px;
+}
+
+.services .webAR .imgWebAR {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: url("imgs/web-augmented-reality.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.services .webAR .textAR {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 30px 50px;
+}
+
+.services .webAR .textAR h1 {
+  color: #e50872;
+  font-size: 2em;
+  line-height: 1.35em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services .webAR .textAR p {
+  color: #808080;
+  line-height: 1.7em;
+}
+
+.services .webAR .textAR p span {
+  background: #eaebeb;
+  padding: 4px 12px 3px 12px;
+  border-radius: 4px;
+  color: black;
+}
+
+.services .webAR .textAR h2 {
+  color: #e50872;
+  margin-bottom: 0;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+.services .webAR .textAR ul {
+  color: #808080;
+  line-height: 2.3em;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.services .webAR .textAR .compatibility {
+  margin-bottom: 0;
+}
+
+.services .webAR .textAR .compatibility i {
+  font-size: 2em;
+}
+
+.services .webAR .textAR .compatibility .fa-android {
+  -webkit-transform: translatey(6px);
+          transform: translatey(6px);
+}
+
+.services .webAR .textAR .compatibility .fa-apple {
+  -webkit-transform: translatey(3px);
+          transform: translatey(3px);
+}
+
+.services .process {
+  padding: 0;
+  margin: 0;
+  border-radius: none;
+  background: none;
+  width: unset;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.services .process .processFlex {
+  margin-bottom: -155px;
+}
+
+.services .process .processFlex .processUnit {
+  padding-top: 25px;
+}
+
+.services .process .processFlex .processUnit .processIcon01 {
+  background: url("imgs/ar_process01.svg") no-repeat center;
+}
+
+.services .process .processFlex .processUnit .processIcon02 {
+  background: url("imgs/ar_process02.svg") no-repeat center;
+}
+
+.services .process .processFlex .processUnit .processIcon03 {
+  background: url("imgs/ar_process03.svg") no-repeat center;
+}
+
+.services .process .processFlex .processUnit h1 {
+  margin-top: 15px;
+  color: #1a1a1a;
+  line-height: 1.35em;
+}
+
+.services .process .processFlex .processUnit .text {
+  margin-top: 10px;
+}
+
+.newsletter {
+  height: 500px;
+}
+
+.newsletter h1 {
+  padding-top: 80px;
 }
 /*# sourceMappingURL=services.css.map */
