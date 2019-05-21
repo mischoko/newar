@@ -1721,6 +1721,7 @@ footer .footNav ul li a {
           box-shadow: -5px -2px 17px rgba(0, 0, 0, 0.17);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  height: 700px;
   position: relative;
 }
 
@@ -1744,9 +1745,13 @@ footer .footNav ul li a {
       flex-basis: 50%;
   width: 500px;
   height: 500px;
-  background: #1a1a1a;
+  background: url("imgs/ar_app.jpg") no-repeat center;
+  background-size: contain;
   margin-right: 16%;
   margin-left: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .process {
@@ -1945,8 +1950,8 @@ footer .footNav ul li a {
 .services .platform .imgPlatform {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  background: url("imgs/augmented-reality.jpg") no-repeat center;
-  background-size: cover;
+  background: url("imgs/ar_app.jpg") no-repeat center;
+  background-size: contain;
 }
 
 .services .platform .textAR {
@@ -2076,6 +2081,10 @@ footer .footNav ul li a {
           transform: translatey(3px);
 }
 
+.services .switchOn {
+  display: none;
+}
+
 .services .process {
   padding: 0;
   margin: 0;
@@ -2122,5 +2131,82 @@ footer .footNav ul li a {
 
 .newsletter h1 {
   padding-top: 80px;
+}
+
+@media screen and (max-width: 1400px) {
+  .topImg .topWrap {
+    margin-left: 6%;
+  }
+  .topImg .ARimg {
+    margin-right: 6%;
+  }
+  .services {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .services .AR .textAR h1 {
+    font-size: 1.6em;
+  }
+  .services .platform .textAR {
+    padding-right: 0;
+  }
+  .services .platform .textAR h1 {
+    font-size: 1.6em;
+  }
+  .services .platform .textAR h1 br {
+    display: none;
+  }
+  .services .webAR .textAR {
+    padding-right: 0;
+  }
+  .services .webAR .textAR h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .services .webAR .textAR .switch {
+    display: none;
+  }
+  .services .switchOn {
+    display: block;
+  }
+  .services .switchOn h1 {
+    color: #e50872;
+    font-size: 2em;
+    line-height: 1.35em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .services .switchOn p {
+    color: #808080;
+    line-height: 1.7em;
+  }
+  .services .switchOn h2 {
+    color: #e50872;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    margin-top: 30px;
+  }
+  .services .switchOn ul {
+    color: #808080;
+    line-height: 2.3em;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .services .switchOn .compatibility {
+    margin-bottom: 0;
+  }
+  .services .switchOn .compatibility i {
+    font-size: 2em;
+  }
+  .services .switchOn .compatibility .fa-android {
+    -webkit-transform: translatey(6px);
+            transform: translatey(6px);
+  }
+  .services .switchOn .compatibility .fa-apple {
+    -webkit-transform: translatey(3px);
+            transform: translatey(3px);
+  }
 }
 /*# sourceMappingURL=services.css.map */

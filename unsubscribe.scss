@@ -1,0 +1,158 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+$pink: #e50872;
+$gray: #808080;
+$dark: #1a1a1a;
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url("https://cdn.wetransfer.net/ivise/eyJwaXBlbGluZSI6W1sic3JnYiIse31dLFsiYXV0b19vcmllbnQiLHt9XSxbImZpdF9jcm9wIix7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjgwMCwiZ3Jhdml0eSI6ImMifV0sWyJzaGFycGVuIix7InJhZGl1cyI6MC43NSwic2lnbWEiOjAuNX1dXSwic3JjX3VybCI6Imh0dHBzOi8vd2V0cmFuc2ZlcnBsdXNpbWFnZXMuczMuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb20vZTZjZDJkYjUtOTMyNC00NmZhLTk4NDUtYjhiNThmYTk2MmEzLTIwMTgxMjExMTkwMi5qcGcifQ/b452f5cd661ce82878f41456c670caa09e89896076557c0d1241c398a98a8f52") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.midBg{
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 20px 50px;
+    box-shadow: -3px 2px 12px rgba(0, 0,0, .19);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        margin: 0;
+        color: $dark;
+        text-align: center;
+        margin-top: 10px;
+    }
+    p{
+        color: $gray;
+        margin: 20px 0;
+        text-align: center;
+        line-height: 1.7em;
+    }
+    form{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        input{
+            border: none;
+            padding: 7px 50px 6px 50px;
+            text-align: center;
+            background: white;
+            box-shadow: -3px 2px 12px rgba(0, 0,0, .19);
+            margin-right: 20px;
+            border-radius: 50px;
+            transition-duration: .25s;
+            &:focus{
+                outline: none;
+                outline-color: transparent;
+                outline-style: none;
+                outline-width: 0;
+              }
+        }
+        button{
+            border-radius: 50px;
+            background: $pink;
+            border: none;
+            padding: 7px 25px 6px 25px;
+            color: white;
+            transition-duration: .25s;
+            &:hover{
+                background: #f83995;
+                box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+                cursor: pointer;
+                transform: translateY(-2px);
+              }
+            &:active{
+            background: #b40659;
+            color: lightgray;
+            box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+            }
+            &:focus{
+            outline: none;
+            outline-color: transparent;
+            outline-style: none;
+            outline-width: 0;
+            }
+        }
+    }
+    .logo{
+        width: 35px;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+}
+.success{
+    display: none;
+    .okBtn{
+        border-radius: 50px;
+        background: $pink;
+        border: none;
+        padding: 7px 25px 6px 25px;
+        color: white;
+        transition-duration: .25s;
+        margin: 0 auto;
+        &:hover{
+            background: #f83995;
+            box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            transform: translateY(-2px);
+            }
+        &:active{
+        background: #b40659;
+        color: lightgray;
+        box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+        }
+        &:focus{
+        outline: none;
+        outline-color: transparent;
+        outline-style: none;
+        outline-width: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .midBg{
+        width: 100%;
+        padding-bottom: 15px;
+        p{
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            button{
+                max-width: 120px;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+            #email{
+                margin-right: 0;
+                width: 260px;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
