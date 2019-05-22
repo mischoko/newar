@@ -36,6 +36,7 @@ $grad: linear-gradient(#28024d , #e50872);
         margin-right: $init;
         margin-left: 20px;
         align-self: center;
+        max-width: 90%;
     }
 }
 //process > using AR
@@ -158,6 +159,9 @@ $grad: linear-gradient(#28024d , #e50872);
                 padding-left: 20px;
             }
             .compatibility{
+                br{
+                    display: none;
+                }
                 margin-bottom: 0;
                 i{
                     font-size: 2em;
@@ -364,6 +368,13 @@ $grad: linear-gradient(#28024d , #e50872);
 }
 @media screen and (max-width: 1210px) {
     .services{
+        .platform{
+            .imgPlatform{
+                    flex-basis: 40%;
+                    background: url('imgs/ar_app.jpg')no-repeat top;
+                    background-size: 120%;
+            }
+        }
         .webAR{
             .textAR{
                 .switch{
@@ -406,6 +417,311 @@ $grad: linear-gradient(#28024d , #e50872);
                 }
                 .fa-apple{
                     transform: translatey(3px);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .topImg {
+        .topWrap > .topHead{
+            font-size: 2em;
+        }
+        .ARimg{
+            background-size: cover;
+        }
+    }
+    .services > .AR{
+        flex-direction: column;
+        .imgAR{
+            width: 100%;
+            height: 450px;
+            flex-basis: unset;
+            background-position: bottom;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 15px;
+        }
+        .textAR{
+            padding-top: 45px;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .process > .processFlex{
+        margin-top: 110px !important;
+        .processUnit{
+            max-width: 350px;
+        }
+    }
+    .newsletter{
+        height: 570px;
+        h1{
+            padding-top: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .topImg{
+        padding-top: 55px;
+        height: 500px;
+        .topWrap{
+            margin-right: 0;
+            padding-right: 0;
+            .topHead{
+                font-size: 1.5em;
+            }
+            .topHide{
+                display: none;
+            }
+        }
+        .ARimg{
+            background-size: contain;
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    //process / video
+    .process{
+        .videoCont{
+            flex-direction: column;
+            margin-top: 40px;
+            .videoWrapper{
+                margin: 0;
+                margin-bottom: 30px;
+                padding-bottom: 51.25%;
+                width: 100%;
+            }
+        }
+        .cliHeader{
+            &:last-of-type{
+                margin-top: 60px;
+            }
+        }
+        .vidText{
+            br{
+                display: none;
+            }
+        }
+        .vidBtn{
+            margin-top: 20px;
+        }
+    }
+    .ctaConfig{
+        padding-left: $mob;
+        padding-right: $mob;
+        p{
+            br{
+                display: none;
+            }
+        }  
+    }
+    //services
+    .services{
+        .servHeader{
+            font-size: 1.5em;
+        }
+        .platformHeader{
+            font-size: 1.5em;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .topImg{
+        height: 950px;
+        flex-direction: column;
+        padding-top: 145px;
+        .topWrap{
+            flex-basis: 35%;
+            padding-right: $mob;
+            .topHead{
+                text-align: center;
+                br{
+                    display: none;
+                }
+            }
+            .topHide{
+                display: block;
+            }
+        }
+        .ARimg{
+            flex-basis: 65%;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+    }
+    //configurator
+    .ctaConfig{
+        height: 400px;
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    //services
+    .services{
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 380px;
+            }
+            .textAR{
+                padding-left: 30px;
+                padding-right: 30px;
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                .compatibility{
+                    text-align: center;
+                    br{
+                        display: block;
+                    }
+                    .fab{
+                        font-size: 2.5em !important;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px){
+    //newsletter
+    .newsletter{
+        height: 630px;
+        h1{
+            padding-top: 140px;
+        }
+    }
+  //benefits  / process
+    .process{
+        .cliHeader{
+            &:first-of-type{
+                margin-top: 5px;
+            }
+        }
+        .processFlex{
+            margin-top: 90px !important;
+        }
+    }
+    //services
+    .services{
+        .AR{
+            .textAR{
+                padding-top: 25px;
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    .topImg{
+        .ARimg{
+            background-size: contain;
+        }
+    }
+    //configurator
+    .ctaConfig{
+        height: 450px;
+        h1{
+            line-height: 1.35em;
+        }
+    }
+    //services
+    .services{
+        .servHeader{
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 290px;
+            }
+            .textAR{
+                h1{
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .topImg{
+        padding-top: 165px;
+        height: 800px;
+        .topHead{
+            &:nth-of-type(1){
+                display: block !important;
+            }
+        }
+        .ARimg{
+            flex-basis: 60%;
+        }
+    }
+    //demo request
+    .requestDemo{
+        .ctaBtn{
+            margin-top: 5px;
+        }
+    }
+    //process
+    .process{
+        .processFlex{
+            .processUnit{
+                h1{
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .cliHeader{
+            &:first-of-type{
+                height: 40px;
+                font-size: 1.3em;
+            }
+            &:last-of-type{
+                font-size: 1.3em;
+                margin-top: 50px;
+            }
+        }
+        .vidBtn{
+            margin-top: 0;
+        }
+    }
+    //services
+    .services{
+        .servHeader{
+            padding-top: 25px;
+            margin-bottom: 25px;
+        }
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 210px;
+            }
+            .textAR{
+                padding-left: 20px;
+                    padding-right: 20px;
+                ul{
+                    line-height: 1.55em;
+                    padding-left: 15px;
+                    li{
+                        margin-top: 20px;
+                    }
                 }
             }
         }
