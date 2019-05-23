@@ -8,6 +8,22 @@ $gray: #808080;
 $dark: #1a1a1a;
 $grad: linear-gradient(#28024d , #e50872);
 
+.padFix{
+    padding-bottom: 20px !important;
+}
+.fa-chevron-down{
+    color: $gray;
+    font-size: 1.5em;
+    
+}
+.rotateMargin{
+    transition-duration: .25s;
+    margin-bottom: 15px !important;
+    i{
+    color: $pink;
+    }
+}
+
 //top image
 .topImg{
     background: white;
@@ -218,6 +234,9 @@ $grad: linear-gradient(#28024d , #e50872);
                 padding-left: 20px;
             }
             .compatibility{
+                br{
+                    display: none;
+                }
                 margin-bottom: 0;
                 i{
                     font-size: 2em;
@@ -335,6 +354,7 @@ $grad: linear-gradient(#28024d , #e50872);
             margin-right: $mob;
         }
     }
+    //services
     .services{
         padding-left: $mob;
         padding-right: $mob;
@@ -409,6 +429,9 @@ $grad: linear-gradient(#28024d , #e50872);
             }
             .compatibility{
                 margin-bottom: 0;
+                br{
+                    display: none;
+                }
                 i{
                     font-size: 2em;
                 }
@@ -431,20 +454,50 @@ $grad: linear-gradient(#28024d , #e50872);
             background-size: cover;
         }
     }
-    .services > .AR{
-        flex-direction: column;
-        .imgAR{
-            width: 100%;
-            height: 450px;
-            flex-basis: unset;
-            background-position: bottom;
-            border-bottom-left-radius: 0;
-            border-top-right-radius: 15px;
+    //services
+    .services{
+        .AR{
+            flex-direction: column;
+            .imgAR{
+                width: 100%;
+                height: 450px;
+                flex-basis: unset;
+                background-position: bottom;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 15px;
+            }
+            .textAR{
+                padding-top: 45px;
+                h1{
+                    text-align: center;
+                }
+            }
         }
-        .textAR{
-            padding-top: 45px;
-            h1{
-                text-align: center;
+        .platformHeader{
+            padding-top: 30px;
+            margin-bottom: 35px;
+        }
+        .platform{
+            flex-direction: column;
+            .imgPlatform{
+                background: url('imgs/platform.jpg')no-repeat center;
+                background-size: cover;
+                height: 400px;
+                flex-basis: unset;
+            }
+            .textAR{
+                padding-left: 0;
+                padding-right: 0;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+        .webAR{
+            .textAR{
+                h1{
+                    text-align: center;
+                }
             }
         }
     }
@@ -481,6 +534,25 @@ $grad: linear-gradient(#28024d , #e50872);
         }
         .ARimg{
             background-size: contain;
+        }
+    }
+    //services
+    .services{
+        .webAR{
+            margin-top: 20px;
+            flex-direction: column-reverse;
+            .imgWebAR{
+                background: url('imgs/webAr.jpg')no-repeat center;
+                background-size: contain;
+                flex-basis: unset;
+                min-height: 350px;
+                width: 100%;
+            }
+            .textAR{
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+            }
         }
     }
 }
@@ -528,9 +600,18 @@ $grad: linear-gradient(#28024d , #e50872);
         .platformHeader{
             font-size: 1.5em;
         }
+        .platform{
+            .imgPlatform{
+                height: 320px;
+            }
+        }
     }
 }
 @media screen and (max-width: 620px) {
+    //initial hide of dowpdown functionality for using AR mobile view 
+        .txt0, .txt1, .txt2, .txt3, .txt4, .txt5{
+            display: none;
+        }
     .topImg{
         height: 950px;
         flex-direction: column;
@@ -588,6 +669,61 @@ $grad: linear-gradient(#28024d , #e50872);
                 }
             }
         }
+        .platform{
+            .imgPlatform{
+                height: 240px;
+                border-radius: 15px;
+            }
+            .textAR{
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                .compatibility{
+                    text-align: center;
+                    br{
+                        display: block;
+                    }
+                    .fab{
+                        font-size: 2.5em !important;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .webAR{
+            .imgWebAR{
+                min-height: 260px;
+            }
+            .textAR{
+                padding-bottom: 10px;
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+        .switchOn{
+            margin-bottom: 120px;
+            .compatibility{
+                text-align: center;
+                br{
+                    display: block;
+                }
+                .fab{
+                    font-size: 2.5em !important;
+                    margin-bottom: 20px;
+                }
+            }
+            h2{
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.4em;
+                
+            }
+        }
     }
 }
 
@@ -615,6 +751,37 @@ $grad: linear-gradient(#28024d , #e50872);
         .AR{
             .textAR{
                 padding-top: 25px;
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .platform{
+            .textAR{
+                padding-top: 25px;
+                h1{
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .webAR{
+            .imgWebAR{
+                background: url('imgs/web-augmented-reality.jpg')no-repeat center;
+                background-size: cover;
+                min-height: unset;
+                height: 600px;
+            }
+            .textAR{
                 ul{
                     line-height: 1.8em;
                     li{

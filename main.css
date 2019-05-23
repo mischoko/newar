@@ -373,6 +373,8 @@ nav ul li a:hover {
 .process .processFlex .processUnit .circles .fa-circle {
   font-size: .5em;
   color: #808080;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
 }
 
 .process .processFlex .processUnit .circles .fa-circle:nth-of-type(2) {
