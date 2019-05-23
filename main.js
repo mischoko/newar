@@ -57,7 +57,10 @@ if(width < 930){
  
     $('.net, .nav-btn').on('click',function(){
         $(this).removeClass('seen');
-        $('.fa-sort-down').toggleClass('rotate');
+        var checkArrow = $('.fa-sort-down').hasClass('rotate');
+        if(checkArrow == true){
+            $('.fa-sort-down').toggleClass('rotate');
+        }
         $('.dropdown').slideUp(200);
     });
 
