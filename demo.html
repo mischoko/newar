@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>AR Visual | Augmented Reality solutions</title>
-      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="demo.css">
       <link rel="stylesheet" href="owl.carousel.css">
       <link rel="stylesheet" href="animate.css">
       <link rel="stylesheet" href="owl.theme.default.css">
@@ -67,49 +67,27 @@
       <main>
             <div class="topImg">
                   <div class="topWrap">
-                        <h1 class="topHead">About AR Visual Ltd.</h1>
-                        <p class="topSubhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore minima reprehenderit non mollitia, necessitatibus quisquam minus incidunt, perferendis voluptatibus totam accusantium modi! Nobis voluptas cum doloremque tempore doloribus, corporis dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae culpa doloribus nulla necessitatibus. Laborum sit, in tempore placeat non voluptates, asperiores dolore nostrum veritatis, distinctio excepturi alias perspiciatis porro quae.</p>
+                        <h1 class="topHead">Contact us</h1>
+                        <p class="topSubhead">Whether you are interested in getting a free demonstration of your products in Augmented Reality, you wish to get more information about our services or pricing, feel free to use the contact form below and write us an email. We will get to you as soon&nbsp;as&nbsp;possible.</p>
                   </div>
-                  <section class="blog">
-                        <div class="blogFlex">
-                              <div class="blogUnit">
-                                    <div class="blogImg01"></div>
-                                    <h1 class="header">Bratislava - Staré Grunty 18</h1>
-                                    <p class="text">Our office in Bratislava located in the historical center houses over fifty
-                                                of our sales and marketing employees. With over 300m² the office makes
-                                                for a great productive place to grown and learn.
-                              </div>
-                              <div class="blogUnit">
-                                    <div class="blogImg02"></div>
-                                    <h1 class="header">London - Warren st. 12 A</h1>
-                                    <p class="text">WeWork building became the base of our operation 6 years ago and
-                                                since then, we have come a long way. To this day it remains the HQ
-                                                of AR Visual and represents a workplace for our top management.
-                              </div>
-                        </div>
-                        <div class="blogFlex">
-                              <div class="blogUnit fixup">
-                                    <div class="blogImg03"></div>
-                                    <h1 class="header">Prague - Jindřišská 16</h1>
-                                    <p class="text">The Prague office located in the historical building and houses some of
-                                                our sales representatives that are responsible mainly for taking care about
-                                                the Scandinavian and German speaking market.
-                              </div>
-                              <div class="blogUnit">
-                                    <div class="blogImg04"></div>
-                                    <h1 class="header">Miami - 117 NE 1st Ave</h1>
-                                    <p class="text">The latest addition to our presence-map has been in year 2019 - the office
-                                                in Miami where our sale reps are ready to take on any challenge no matter
-                                                the time zone, taking care of US market and Japan.
-                              </div>
-                        </div>
-                  </section>
             </div>
             <section class="requestDemo">
                   <h1>Let's talk!</h1>
-                  <p>If you are curious about the technology or your wish to see your<br>products
-                        visualized in Augmented Reality, let&nbsp;us&nbsp;know!</p>
-                  <div class="ctaBtn"><a class="btn" href="demo">Contact us</a></div>
+                  <p>Select the topic of your interest and go describe the&nbsp;issue&nbsp;briefly.</p>
+                  <div class="calendar">
+                    <form class="contact_form" action="php.php" method="POST">
+                        <select class="input-subject" id="subject" type="select" name="subj" required="" >
+                              <option value="" disabled="" selected="">Choose a subject</option>
+                              <option>Price</option>
+                              <option>Services</option>
+                              <option>Other</option>
+                        </select>
+                        <input class="input-email" id="userEmail" type="email" name="email" required="" placeholder="youremail@mail.com">
+                        <textarea  class="input-message" id="message" type="text" name="message" rows="10" cols="30" placeholder="Message..." required=""></textarea>
+                        <p class="privacy">By submitting your email address, you agree with our <a href="privacy-policy">privacy policy.</a></p>
+                        <input id="submit" type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
             </section>
       </main>
       <footer>
