@@ -10,6 +10,8 @@ $(".contact_form").submit(function (event) {
             data:  "email=" + email + "&message=" + message + "&subj=" + subject,
             complete: function () {
                 $('.calendar').hide();
+                $('.calHead'). hide();
+                $('.calInfo').hide();
                 $('.successAlert').show();
                 $('.contact_form').trigger("reset");
             }
@@ -25,9 +27,19 @@ $('.okBtn').on('click', function(){
     $('.calendar').show();
 });
 
+//thanks msg after newsletter subscription
+$('#mc-embedded-subscribe').on('click',function(){
+    $('.mce-EMAIL').trigger("reset");
+});
+
 //close menu after choosing li item
 $('.close').on('click', function(){
     $('.nav-btn').trigger('click');
+});
+
+//contact functionality / scrolls down
+$('.close').on('click',function(){
+    $('html, body').scrollTop($(document).height());
 });
 
 //contact special class off media query

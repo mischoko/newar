@@ -1731,6 +1731,37 @@ footer .footNav ul li a {
   text-align: center;
 }
 
+.GL {
+  background-image: url("imgs/gant_lights_cs_big.jpg");
+}
+
+.wg {
+  background-image: url("imgs/wooden_germany_cs_big.jpg");
+}
+
+.tuli {
+  background-image: url("imgs/tuli_cs_big.jpg");
+  background-position: right;
+}
+
+.gm {
+  background-image: url("imgs/greenmood_cs_big.jpg");
+  background-position: right;
+}
+
+.gf {
+  background-image: url("imgs/glamm_fire_cs_big.jpg");
+}
+
+.cinier {
+  background-image: url("imgs/cinier_cs_big.jpg");
+  background-position: right;
+}
+
+.shade {
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.65);
+}
+
 .process .processFlex .processUnit {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1781,6 +1812,26 @@ footer .footNav ul li a {
 
 .process .testimony .bio .jakub {
   background-image: url("imgs/testimonials/vzor.jpg");
+}
+
+.process .testimony .bio .stefan {
+  background-image: url("imgs/testimonials/gantlights.jpg");
+}
+
+.process .testimony .bio .genrih {
+  background-image: url("https://media.licdn.com/dms/image/C5603AQF-aCKev6VYQg/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=_rKwVhFjHGz-yTx-LNtkFkb-IMHhnOCdBnZtugfH0N4");
+}
+
+.process .testimony .bio .guttman {
+  background-image: url("imgs/testimonials/tuli.jpg");
+}
+
+.process .testimony .bio .sadig {
+  background-image: url("imgs/testimonials/greenmood.jpg");
+}
+
+.process .testimony .bio .isabel {
+  background-image: url("imgs/testimonials/glammfire.jpg");
 }
 
 .process .testimony .bio .job {
@@ -1849,6 +1900,9 @@ footer .footNav ul li a {
 }
 
 @media screen and (max-width: 640px) {
+  .topImg .topWrap .topSubhead {
+    margin-top: 0;
+  }
   .process > .testimony {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

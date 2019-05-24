@@ -6,19 +6,16 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>AR Visual | Augmented Reality solutions</title>
       <link rel="stylesheet" href="demo.css">
-      <link rel="stylesheet" href="owl.carousel.css">
-      <link rel="stylesheet" href="animate.css">
-      <link rel="stylesheet" href="owl.theme.default.css">
       <link rel="shortcut icon" href="imgs/favicon.png">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <meta name="description" content="Providing premium 3D modeling services to high-end furniture and home decor manufacturers and resellers.">
-      <meta name="keywords" content="3D, 3D modeling, modelling, 3D models, furniture, services, home, design, decor, creating, premium, luxury, agency, augmented reality, AR, carat3d, ar visual">
+      <meta name="keywords" content="augmented reality, AR, AR visual, 3D, 3D modeling, modelling, 3D models, furniture, services, home, design, decor, premium, agency, app, application, mobile, development">
       <meta name="author" content="AR Visual | Augmented Reality solutions">
       <meta property="og:title" content="AR Visual | Augmented Reality solutions">
       <meta property="og:type" content="website">
-      <meta property="og:url" content="https://www.arvisual.eu/augmented-reality">
+      <meta property="og:url" content="https://www.arvisual.eu/demo">
       <meta property="og:image" content="https://www.arvisual.eu/imgs/mainBg.jpg">
       <meta property="og:description" content="Providing premium 3D modeling services to high-end furniture and home decor manufacturers and resellers.">
       <meta property="og:locale" content="en-EN">
@@ -29,7 +26,7 @@
       <meta name="twitter:image" content="https://www.arvisual.eu/imgs/mainBg.jpg">
       <meta name="twitter:domain" content="AR Visual | Augmented Reality solutions">
       <title itemprop="name">AR Visual | Augmented Reality solutions</title>
-      <meta itemprop="url" content="https://www.arvisual.eu/augmented-reality">
+      <meta itemprop="url" content="https://www.arvisual.eu/demo">
       <meta name="theme-color" content="#e50872"/>
       <!-- preloading images -->
 </head>
@@ -58,7 +55,7 @@
                               <wrapper class="pusher"></wrapper>
                                     <li><a href="video-gallery">Videos</a></li>
                                     <li><a href="https://medium.com/@ARVISUAL" target="_blank">Blog</a></li>
-                                    <li class="contContain"><a href="#contact" class="close highLight">Contact</a></li>
+                                    <li class="contContain"><a href="javascript:void(0)" class="close highLight">Contact</a></li>
                         </ul>
                   </div>
             </nav>
@@ -72,14 +69,15 @@
                   </div>
             </div>
             <section class="requestDemo">
-                  <h1>Let's talk!</h1>
-                  <p>Select the topic of your interest and go describe the&nbsp;issue&nbsp;briefly.</p>
+                  <h1 class="calHead">Let's talk!</h1>
+                  <p class="calInfo">Select the topic of your interest and go describe the&nbsp;issue&nbsp;briefly.</p>
                   <div class="calendar">
                     <form class="contact_form" action="php.php" method="POST">
                         <select class="input-subject" id="subject" type="select" name="subj" required="" >
                               <option value="" disabled="" selected="">Choose a subject</option>
-                              <option>Price</option>
-                              <option>Services</option>
+                              <option>Price request</option>
+                              <option>Services inquiry</option>
+                              <option>Augmented Reality demo request</option>
                               <option>Other</option>
                         </select>
                         <input class="input-email" id="userEmail" type="email" name="email" required="" placeholder="youremail@mail.com">
@@ -87,6 +85,18 @@
                         <p class="privacy">By submitting your email address, you agree with our <a href="privacy-policy">privacy policy.</a></p>
                         <input id="submit" type="submit" name="submit" value="Submit">
                     </form>
+                </div>
+                <div class="successAlert">
+                        <h1>Thank you!</h1>
+                        <p>Your message has been sent successfully. Let's stay in touch via social, feel free to DM us anytime.</p>
+                              <div class="socialBar">
+                                    <a href="https://www.linkedin.com/company/25078963" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://medium.com/@ARVISUAL" target="_blank"><i class="fab fa-medium-m"></i></a>
+                              </div>
+                      <div class="ctaBtn okBtn"><a class="btn" href="javascript:void(0)">Alright</a></div>
                 </div>
             </section>
       </main>
@@ -133,7 +143,5 @@
             </div>
       </footer>
       <script src="main.js"></script>
-      <script src="owl.carousel.js"></script>
-      <script src="owl.navigation.js"></script>
 </body>
 </html>

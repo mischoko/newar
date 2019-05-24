@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-$to = 'info@arvisual.eu';
+$to = 'michal.zak.misch@gmail.com';
 
 $subj     = !empty($_POST['subj']) ? htmlentities($_POST['subj']) : "";
 $email    = !empty($_POST['email']) ? htmlentities($_POST['email']) : "";
@@ -12,7 +12,7 @@ if (empty($subj) || empty($email) || empty($message)) {
     exit();
 }
 
-$headers = "From: info@carat3d.com" . "\r\n" .
+$headers = "From: demo@arvisual.eu" . "\r\n" .
            "Reply-To: $email" . "\r\n" .
            'X-Mailer: PHP/' . phpversion() .
            'MIME-Version: 1.0' . "\r\n" .

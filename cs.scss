@@ -8,6 +8,7 @@ $gray: #808080;
 $dark: #1a1a1a;
 $grad: linear-gradient(#28024d , #e50872);
 
+//top images
 .topImg{
     background-image: url('imgs/vzor_cs_big.jpg');
     .topWrap{
@@ -18,6 +19,31 @@ $grad: linear-gradient(#28024d , #e50872);
             text-align: center;
         }
     }
+}
+.GL{
+    background-image: url('imgs/gant_lights_cs_big.jpg');
+}
+.wg{
+    background-image: url('imgs/wooden_germany_cs_big.jpg');
+}
+.tuli{
+    background-image: url('imgs/tuli_cs_big.jpg');
+    background-position: right;
+}
+.gm{
+    background-image: url('imgs/greenmood_cs_big.jpg');
+    background-position: right;
+}
+.gf{
+    background-image: url('imgs/glamm_fire_cs_big.jpg');
+}
+.cinier{
+    background-image: url('imgs/cinier_cs_big.jpg');
+    background-position: right;
+}
+//shadow
+.shade{
+    text-shadow: 1px 2px 5px rgba(0,0,0,.65);
 }
 //upper blocks
 .process{
@@ -55,9 +81,26 @@ $grad: linear-gradient(#28024d , #e50872);
                 border-radius: 50px;
                 margin: 0 auto;
             }
+            //testimonial names
             .jakub{
                 background-image: url('imgs/testimonials/vzor.jpg');
             }
+            .stefan{
+                background-image: url('imgs/testimonials/gantlights.jpg');
+            }
+            .genrih{
+                background-image: url('https://media.licdn.com/dms/image/C5603AQF-aCKev6VYQg/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=_rKwVhFjHGz-yTx-LNtkFkb-IMHhnOCdBnZtugfH0N4');
+            }
+            .guttman{
+                background-image: url('imgs/testimonials/tuli.jpg');
+            }
+            .sadig{
+                background-image: url('imgs/testimonials/greenmood.jpg');
+            }
+            .isabel{
+                background-image: url('imgs/testimonials/glammfire.jpg');
+            }
+            //end of testimonial names
             .job{
                 text-align: center;
                 color: $gray;
@@ -123,6 +166,13 @@ $grad: linear-gradient(#28024d , #e50872);
     }
 }
 @media screen and (max-width: 640px) {
+    .topImg{
+        .topWrap{
+            .topSubhead{
+                margin-top: 0;
+            }
+        }
+    }
     .process > .testimony {
         flex-direction: column;
         .bio {

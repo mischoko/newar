@@ -2736,6 +2736,12 @@ footer .footNav ul li a {
   padding-bottom: 30px;
 }
 
+.topImg .topWrap {
+  padding-right: 6%;
+  padding-left: 6%;
+  margin-left: 0;
+}
+
 .topImg .topWrap .topHead {
   text-align: center;
 }
@@ -2785,6 +2791,25 @@ footer .footNav ul li a {
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
 }
 
+.requestDemo .calendar form select {
+  padding-left: 18px;
+  color: #808080;
+  outline: none;
+}
+
+.requestDemo .calendar form select option:disabled {
+  color: #cacaca;
+}
+
+.requestDemo .calendar form select option:checked {
+  background: #e50872;
+  color: white;
+}
+
+.requestDemo .calendar form select option:focus {
+  outline: none;
+}
+
 .requestDemo .calendar form textarea {
   border-radius: 10px;
   padding: 8px 22px 7px 22px;
@@ -2816,5 +2841,34 @@ footer .footNav ul li a {
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.requestDemo .successAlert {
+  display: none;
+}
+
+.requestDemo .successAlert .socialBar {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.requestDemo .successAlert .socialBar a {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1.6em;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.requestDemo .successAlert .socialBar a:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 /*# sourceMappingURL=demo.css.map */
