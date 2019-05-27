@@ -2,9 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  scroll-behavior: smooth;
 }
 
 .preload {
@@ -15,14 +13,14 @@ h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-a, button, input {
+a, button {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-a:focus, button:focus, input:focus {
+a:focus, button:focus {
   outline: none;
   outline-color: transparent;
   outline-style: none;
@@ -34,6 +32,7 @@ html {
   padding: 0;
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -41,6 +40,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth !important;
 }
 
 .hidden {
@@ -418,6 +418,19 @@ nav ul li a:hover {
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.process .processFlex .kgb {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.process .processFlex .kgb:first-of-type {
+  margin-right: 20px;
+}
+
+.process .processFlex .kgb:last-of-type {
+  margin-left: 20px;
 }
 
 .cliHeader {
@@ -1264,6 +1277,13 @@ footer .footNav ul li a {
   .process > .processFlex .processUnit:nth-of-type(2) {
     margin: 40px auto !important;
   }
+  .process > .processFlex .kgb {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .process > .processFlex .kgb:last-of-type {
+    margin-top: 50px !important;
+  }
   .cliHeader {
     margin-top: 40px;
   }
@@ -1817,7 +1837,7 @@ footer .footNav ul li a {
   margin-top: 60px;
 }
 
-.process .videoWrapper {
+.process .videoCont .videoWrapper {
   position: relative;
   padding-bottom: 26.25%;
   /* 16:9 */
@@ -1826,15 +1846,15 @@ footer .footNav ul li a {
   width: 50%;
 }
 
-.process .videoWrapper:nth-of-type(1) {
+.process .videoCont .videoWrapper:nth-of-type(1) {
   margin-right: 20px;
 }
 
-.process .videoWrapper:nth-of-type(2) {
+.process .videoCont .videoWrapper:nth-of-type(2) {
   margin-left: 20px;
 }
 
-.process .videoWrapper iframe {
+.process .videoCont .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -2370,7 +2390,8 @@ footer .footNav ul li a {
     margin-top: 40px;
   }
   .process .videoCont .videoWrapper {
-    margin: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
     margin-bottom: 30px;
     padding-bottom: 51.25%;
     width: 100%;
@@ -2657,6 +2678,68 @@ footer .footNav ul li a {
   display: block !important;
 }
 
+.topImg .logo-carousel {
+  padding-left: 16%;
+  padding-right: 16%;
+  width: 100%;
+}
+
+.topImg .logo-carousel .cLogo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+.topImg .logo-carousel .a01 {
+  background-image: url("imgs/clients/1.jpg");
+}
+
+.topImg .logo-carousel .a02 {
+  background-image: url("imgs/clients/2.jpg");
+}
+
+.topImg .logo-carousel .a03 {
+  background-image: url("imgs/clients/3.jpg");
+}
+
+.topImg .logo-carousel .a04 {
+  background-image: url("imgs/clients/4.jpg");
+}
+
+.topImg .logo-carousel .a05 {
+  background-image: url("imgs/clients/5.jpg");
+}
+
+.topImg .logo-carousel .a06 {
+  background-image: url("imgs/clients/6.jpg");
+}
+
+.topImg .logo-carousel .a07 {
+  background-image: url("imgs/clients/7.jpg");
+}
+
+.topImg .logo-carousel .a08 {
+  background-image: url("imgs/clients/8.jpg");
+}
+
+.topImg .logo-carousel .a09 {
+  background-image: url("imgs/clients/9.jpg");
+}
+
+.topImg .logo-carousel .a10 {
+  background-image: url("imgs/clients/10.jpg");
+}
+
+.topImg .logo-carousel .a11 {
+  background-image: url("imgs/clients/11.jpg");
+}
+
+.topImg .logo-carousel .a12 {
+  background-image: url("imgs/clients/12.jpg");
+}
+
 .topImg .caseWrap {
   padding-left: 16%;
   padding-right: 16%;
@@ -2761,7 +2844,7 @@ footer .footNav ul li a {
 }
 
 @media screen and (max-width: 1400px) {
-  .topImg .caseWrap {
+  .topImg .caseWrap, .topImg .logo-carousel {
     padding-left: 6%;
     padding-right: 6%;
   }

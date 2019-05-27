@@ -2,9 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  scroll-behavior: smooth;
 }
 
 .preload {
@@ -15,14 +13,14 @@ h1, h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-a, button, input {
+a, button {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
-a:focus, button:focus, input:focus {
+a:focus, button:focus {
   outline: none;
   outline-color: transparent;
   outline-style: none;
@@ -34,6 +32,7 @@ html {
   padding: 0;
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -41,6 +40,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
+  scroll-behavior: smooth !important;
 }
 
 .hidden {
@@ -418,6 +418,19 @@ nav ul li a:hover {
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.process .processFlex .kgb {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.process .processFlex .kgb:first-of-type {
+  margin-right: 20px;
+}
+
+.process .processFlex .kgb:last-of-type {
+  margin-left: 20px;
 }
 
 .cliHeader {
@@ -1264,6 +1277,13 @@ footer .footNav ul li a {
   .process > .processFlex .processUnit:nth-of-type(2) {
     margin: 40px auto !important;
   }
+  .process > .processFlex .kgb {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .process > .processFlex .kgb:last-of-type {
+    margin-top: 50px !important;
+  }
   .cliHeader {
     margin-top: 40px;
   }
@@ -1721,6 +1741,70 @@ footer .footNav ul li a {
   padding-right: 16%;
 }
 
+.activated {
+  display: block;
+}
+
+.wrapSwitch {
+  position: absolute;
+  display: block;
+  margin-top: -60px;
+}
+
+.wrapSwitch .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  z-index: 66;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .25s;
+  transition: .25s;
+  border-radius: 50px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .25s;
+  transition: .25s;
+  border-radius: 50px;
+}
+
+input:checked + .slider {
+  background-color: #e50872;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px none;
+          box-shadow: 0 0 1px none;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
 .postProcess {
   padding-bottom: 40px;
 }
@@ -1854,8 +1938,6 @@ footer .footNav ul li a {
 }
 
 .postProcess .flex3d .img3d {
-  background: url("imgs/3dmodel.jpg") no-repeat center;
-  background-size: contain;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
@@ -1865,6 +1947,7 @@ footer .footNav ul li a {
   line-height: 1.6em;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  margin-left: 20px;
 }
 
 .postProcess .flex3d .text3d .formats {
@@ -2091,6 +2174,21 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .postProcess .flex3d {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .postProcess .flex3d .img3d {
+    margin: 0 auto;
+  }
+  .postProcess .wrapSwitch {
+    margin-top: -100px;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .downProcess .processFlex .processUnit {
     max-width: 500px;
@@ -2111,22 +2209,6 @@ footer .footNav ul li a {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .postProcess .flex3d {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .postProcess .flex3d .img3d {
-    background: url("imgs/3dmodel_m.jpg") no-repeat center;
-    background-size: cover;
-    -ms-flex-preferred-size: unset;
-        flex-basis: unset;
-    height: 200px;
-  }
-}
-
 @media screen and (max-width: 650px) {
   .postProcess > .flex3d > .img3d {
     background-size: contain;
@@ -2142,6 +2224,9 @@ footer .footNav ul li a {
   .postProcess .processFlex .processUnit .iWrap .iFlex .iconFlex {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+  .postProcess .wrapSwitch {
+    margin-top: -40px;
   }
 }
 

@@ -13,7 +13,7 @@ $grad: linear-gradient(#28024d , #e50872);
     .topWrap{
         padding-right: $mob;
         padding-left: $mob;
-        margin-left: 0;
+        margin-left: 0 !important;
         .topHead{
             text-align: center;
         }
@@ -49,11 +49,17 @@ $grad: linear-gradient(#28024d , #e50872);
                 padding: 8px 22px 7px 22px;
                 border-radius: 50px;
                 box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
-            }
-            select{
+                border-color: none;
                 padding-left: 18px;
+            }
+            #userEmail{
+                display: block;
+            }
+            .input-subject{ /*select*/
+                
                 color: $gray;
                 outline: none;
+                -webkit-appearance:none;
                 option{
                     &:disabled{
                         color: #cacaca;
@@ -72,6 +78,8 @@ $grad: linear-gradient(#28024d , #e50872);
                 padding: 8px 22px 7px 22px;
                 height: 150px;
                 resize: none;
+                border-color: none;
+                padding-left: 18px;
             }
             #submit{
                 background: $pink;
@@ -81,6 +89,9 @@ $grad: linear-gradient(#28024d , #e50872);
                 border-radius: 50px;
                 transition-duration: .25s;
                 box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+                border: none;
+                width: 180px;
+                margin: 0 auto;
                 &:hover{
                     background: #f83995;
                     box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
@@ -112,5 +123,13 @@ $grad: linear-gradient(#28024d , #e50872);
               }
             }
           }
+    }
+}
+
+@media screen and (max-width: 930px){
+    .requestDemo > .calendar > form{
+        input, textarea, select{
+            padding-left: 10px;
+        }
     }
 }

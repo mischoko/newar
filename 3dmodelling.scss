@@ -13,6 +13,68 @@ $grad: linear-gradient(#28024d , #e50872);
         padding-right: $init;
     }
 }
+//tables
+.activated{
+    display: block;
+}
+
+//switch
+.wrapSwitch{
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    z-index: 66;
+  }
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .25s;
+    border-radius: 50px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .25s;
+    border-radius: 50px;
+  }
+  
+  input:checked + .slider {
+    background-color: $pink;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px none;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+//end switch
 .postProcess{
     padding-bottom: 40px;
     .processFlex{
@@ -119,14 +181,13 @@ $grad: linear-gradient(#28024d , #e50872);
         display: flex;
         flex-direction: row;
         .img3d{
-            background: url('imgs/3dmodel.jpg')no-repeat center;
-            background-size: contain;
             flex-basis: 50%;
         }
         .text3d{
             color: $gray;
             line-height: 1.6em;
             flex-basis: 50%;
+            margin-left: 20px;
             .formats{
                 display: flex;
                 justify-content: center;
@@ -326,6 +387,19 @@ $grad: linear-gradient(#28024d , #e50872);
         }
     }
 }
+@media screen and (max-width: 1100px){
+    .postProcess {
+        .flex3d{
+            flex-direction: column;
+            .img3d{
+                margin: 0 auto;
+            }
+        }
+        .wrapSwitch{
+            margin-top: -100px;
+        }
+    }
+}
 @media screen and (max-width: 980px) {
     .downProcess{
         .processFlex{
@@ -350,19 +424,6 @@ $grad: linear-gradient(#28024d , #e50872);
         }
     }
 }
-@media screen and (max-width: 900px) {
-    .postProcess {
-        .flex3d{
-            flex-direction: column;
-            .img3d{
-                background: url('imgs/3dmodel_m.jpg')no-repeat center;
-                background-size: cover;
-                flex-basis: unset;
-                height: 200px;                
-            }
-        }
-    }
-}
 @media screen and (max-width: 650px) {
     .postProcess > .flex3d > .img3d{
         background-size: contain;
@@ -382,6 +443,9 @@ $grad: linear-gradient(#28024d , #e50872);
                     }
                 }
             }
+        }
+        .wrapSwitch{
+            margin-top: -40px;
         }
     }
 }

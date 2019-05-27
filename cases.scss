@@ -21,6 +21,54 @@ $grad: linear-gradient(#28024d , #e50872);
             display: block !important;
         }
     }
+    .logo-carousel{
+        padding-left: $init;
+        padding-right: $init;
+        width: 100%;
+        .cLogo{
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+        }
+        .a01{
+            background-image: url('imgs/clients/1.jpg');
+        }
+        .a02{
+            background-image: url('imgs/clients/2.jpg');
+        }
+        .a03{
+            background-image: url('imgs/clients/3.jpg');
+        }
+        .a04{
+            background-image: url('imgs/clients/4.jpg');
+        }
+        .a05{
+            background-image: url('imgs/clients/5.jpg');
+        }
+        .a06{
+            background-image: url('imgs/clients/6.jpg');
+        }
+        .a07{
+            background-image: url('imgs/clients/7.jpg');
+        }
+        .a08{
+            background-image: url('imgs/clients/8.jpg');
+        }
+        .a09{
+            background-image: url('imgs/clients/9.jpg');
+        }
+        .a10{
+            background-image: url('imgs/clients/10.jpg');
+        }
+        .a11{
+            background-image: url('imgs/clients/11.jpg');
+        }
+        .a12{
+            background-image: url('imgs/clients/12.jpg');
+        }
+    }
     .caseWrap{
         padding-left: $init;
         padding-right: $init;
@@ -100,7 +148,7 @@ $grad: linear-gradient(#28024d , #e50872);
 }
 @media screen and (max-width: 1400px) {
     .topImg{
-        .caseWrap{
+        .caseWrap, .logo-carousel{
             padding-left: $mob;
             padding-right: $mob;
         }

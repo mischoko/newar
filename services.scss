@@ -84,26 +84,26 @@ $grad: linear-gradient(#28024d , #e50872);
         flex-direction: row;
         width: 100%;
         margin-top: 60px;
-    }
-    .videoWrapper {
-        position: relative;
-        padding-bottom: 26.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-        width: 50%;
-        &:nth-of-type(1){
-            margin-right: 20px;
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 26.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+            width: 50%;
+            &:nth-of-type(1){
+                margin-right: 20px;
+            }
+            &:nth-of-type(2){
+                margin-left: 20px;
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
-        &:nth-of-type(2){
-            margin-left: 20px;
-        }
-    }
-    .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
     }
     .vidBtn{
         margin-top: 40px;
@@ -563,7 +563,8 @@ $grad: linear-gradient(#28024d , #e50872);
             flex-direction: column;
             margin-top: 40px;
             .videoWrapper{
-                margin: 0;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
                 margin-bottom: 30px;
                 padding-bottom: 51.25%;
                 width: 100%;

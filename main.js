@@ -29,7 +29,7 @@ $('.okBtn').on('click', function(){
 
 //thanks msg after newsletter subscription
 $('#mc-embedded-subscribe').on('click',function(){
-    $('.mce-EMAIL').trigger("reset");
+    $('#mce-EMAIL').trigger("reset");
 });
 
 //close menu after choosing li item
@@ -38,8 +38,9 @@ $('.close').on('click', function(){
 });
 
 //contact functionality / scrolls down
-$('.close').on('click',function(){
-    $('html, body').scrollTop($(document).height());
+const contact = document.getElementById('sfCnt');
+contact.addEventListener("click", function(){
+  window.scrollTo(0,document.body.scrollHeight);
 });
 
 //contact special class off media query
@@ -53,7 +54,7 @@ if(width < 930){
 }
 
  //checks if the dropdown is open / normalizes the closing process
-    $('#solutions').on('click',function(){ 
+    $('#solutions').on('click',function(){
         var isopen = $('.dropdown').hasClass('open');
         if (isopen == true){
            $('.dropdown').removeClass('open');
@@ -66,7 +67,7 @@ if(width < 930){
         $('.dropdown').slideToggle(200).css('display','flex').addClass('open');
         $('.net').toggleClass('seen');
     });
- 
+
     $('.net, .nav-btn').on('click',function(){
         $(this).removeClass('seen');
         var checkArrow = $('.fa-sort-down').hasClass('rotate');
@@ -114,13 +115,15 @@ $(document).ready(function(){
 });
 
 //removes placeholder when :focus is in newsletter email input
-$('#email').focus(function(){
+ $('#email').focus(function(){
     $(this).removeAttr('placeholder');
 });
 
 //top calc for arrows
 $(document).ready(function(){
-    var top = $('.cliLogos').offset().top;
+    var offset = $('.cliLogos').offset();
+    if (!offset) return;
+    var top = offset.top;
     var fintop = top - 185;
     $('.arwz').css('top', fintop + 'px');
 });
