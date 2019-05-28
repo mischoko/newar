@@ -37,11 +37,6 @@ $('.close').on('click', function(){
     $('.nav-btn').trigger('click');
 });
 
-//contact functionality / scrolls down
-const contact = document.getElementById('sfCnt');
-contact.addEventListener("click", function(){
-  window.scrollTo(0,document.body.scrollHeight);
-});
 
 //contact special class off media query
 var width = $(document).width();
@@ -51,7 +46,7 @@ if(width < 930){
     $('#solutions').on('click',function(){
         $(this).toggleClass('pink');
     });
-}
+};
 
  //checks if the dropdown is open / normalizes the closing process
     $('#solutions').on('click',function(){
