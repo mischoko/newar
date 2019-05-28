@@ -62,7 +62,7 @@ Main Components
 }
 /* zoom imag settings */
 .zoomImg{
-  background: url('https://www.carat3d.com/test/4k/01.jpg')no-repeat;
+  background: url('https://www.arvisual.eu/newar/4k/01.jpg')no-repeat;
   background-size: 85%;
   background-position: center;
   width: 100%;
@@ -91,6 +91,12 @@ Main Components
   transition-duration: .2s;
 }
 .unzoom{
+  display: none;
+}
+.online{
+  display: block;
+}
+.offline{
   display: none;
 }
 /* zoom info */
