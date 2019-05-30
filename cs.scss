@@ -41,6 +41,9 @@ $grad: linear-gradient(#28024d , #e50872);
     background-image: url('imgs/cinier_cs_big.jpg');
     background-position: right;
 }
+.heymat{
+    background-image: url('imgs/heymat_cs_big.jpg');
+}
 //shadow
 .shade{
     text-shadow: 1px 2px 5px rgba(0,0,0,.65);
@@ -99,6 +102,12 @@ $grad: linear-gradient(#28024d , #e50872);
             }
             .isabel{
                 background-image: url('imgs/testimonials/glammfire.jpg');
+            }
+            .cinier{
+                background-image: url('imgs/testimonials/cinier.jpg');
+            }
+            .sonja{
+                background-image: url('imgs/testimonials/heymat.jpg');
             }
             //end of testimonial names
             .job{
