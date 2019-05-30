@@ -2658,6 +2658,70 @@ footer .footNav ul li a {
   }
 }
 
+.colorpicker {
+  position: absolute;
+  z-index: 999;
+}
+
+.colorpicker .green {
+  background: #329493;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 25px;
+  border-radius: 50px;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.colorpicker .green:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.25);
+  background: #3fbab9;
+}
+
+.colorpicker .green:active {
+  background: #2e8786;
+}
+
+.colorpicker .blue {
+  background: #3e5d79;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.colorpicker .blue:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.25);
+  background: #5580a6;
+}
+
+.colorpicker .blue:active {
+  background: #324c63;
+}
+
+.colorpicker .selected {
+  border: #329493 solid 10px;
+  background: white;
+}
+
+.colorpicker .selected:hover {
+  background: unset;
+}
+
+.colorpicker .selected2 {
+  border: #3e5d79 solid 10px;
+  background: white;
+}
+
+.colorpicker .selected2:hover {
+  background: unset;
+}
+
 .topImg {
   height: auto;
   padding-top: 100px;
@@ -2731,34 +2795,6 @@ footer .footNav ul li a {
 
 .topImg .popupMain .zoomInfo {
   color: #e50872;
-}
-
-.topImg .colorpicker {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.topImg .colorpicker .green {
-  background: green;
-  width: 50px;
-  height: 50px;
-}
-
-.topImg .colorpicker .green:hover {
-  opacity: .8;
-}
-
-.topImg .colorpicker .blue {
-  background: blue;
-  width: 50px;
-  height: 50px;
-}
-
-.topImg .colorpicker .blue:hover {
-  opacity: .8;
 }
 
 @media screen and (max-width: 1600px) {

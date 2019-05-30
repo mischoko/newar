@@ -470,12 +470,22 @@ $('.exit').on('click',function(){
    });
 
    //changing colour functionality
+   //determining the coordinates top left based on fullscreen btn
+   var fullscreenLeftCalc = $('.fullscreen').offset().left;
+   var fullscreenLeft = fullscreenLeftCalc;
+   var fullscreenTop = $('.fullscreen').offset().top;
+   $('.colorpicker').css('left',fullscreenLeft).css('top',fullscreenTop + 100);
+
 	$('.green').on('click',function(){
 		$('.first').addClass('online').removeClass('offline');
 		$('.second').addClass('offline').removeClass('online');
+		$(this).addClass('selected');
+		$('.blue').removeClass('selected2');
    });
 
    $('.blue').on('click',function(){
 		$('.second').addClass('online').removeClass('offline');
 		$('.first').addClass('offline').removeClass('online');
+		$(this).addClass('selected2');
+		$('.green').removeClass('selected');
    });
