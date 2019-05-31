@@ -2774,27 +2774,51 @@ footer .footNav ul li a {
   background-image: url("imgs/office/bratislava.jpg");
 }
 
+.topImg .blog .blogFlex .blogUnit .blogImg01:hover {
+  opacity: 1;
+}
+
 .topImg .blog .blogFlex .blogUnit .blogImg02 {
   background-image: url("imgs/office/london.jpg");
+}
+
+.topImg .blog .blogFlex .blogUnit .blogImg02:hover {
+  opacity: 1;
 }
 
 .topImg .blog .blogFlex .blogUnit .blogImg03 {
   background-image: url("imgs/office/prague.jpg");
 }
 
+.topImg .blog .blogFlex .blogUnit .blogImg03:hover {
+  opacity: 1;
+}
+
 .topImg .blog .blogFlex .blogUnit .blogImg04 {
   background-image: url("imgs/office/miami.jpg");
+}
+
+.topImg .blog .blogFlex .blogUnit .blogImg04:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1400px) {
   .topImg .topWrap {
     margin-bottom: 0;
   }
+  .topImg .blog {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
 }
 
 @media screen and (max-width: 930px) {
   .topImg > .topWrap {
     margin-top: 50px;
+    padding-right: 6%;
+  }
+  .topImg > .topWrap .topHead {
+    text-align: center;
   }
 }
 

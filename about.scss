@@ -21,6 +21,7 @@ $grad: linear-gradient(#28024d , #e50872);
             display: block !important;
         }
     }
+    //blog 
     .blog{
         padding-bottom: 0;
         z-index: unset;
@@ -38,15 +39,69 @@ $grad: linear-gradient(#28024d , #e50872);
                 }
                 .blogImg01{
                     background-image: url('imgs/office/bratislava.jpg');
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
                 .blogImg02{
                     background-image: url('imgs/office/london.jpg');
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
                 .blogImg03{
                     background-image: url('imgs/office/prague.jpg');
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
                 .blogImg04{
                     background-image: url('imgs/office/miami.jpg');
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .jobOffer{
+        .jobHead{
+            text-align: center;
+            font-size: 2.5em;
+            color: $pink;
+            margin-top: 0;
+        }
+        .jobText{
+            max-width: 600px;
+            color: $gray;
+            line-height: 1.6em;
+            margin: 0 auto;
+            text-align: center;
+            padding-left: $mob;
+            padding-right: $mob;
+        }
+        .jobFlex{
+            padding-left: $init;
+            padding-right: $init;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 40px;
+            .jobUnit{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 25%;
+                align-items: center;
+                .jobImg{
+                    background: url('imgs/offices/job.svg')no-repeat center;
+                    background-size: cover;
+                    width: 50px;
+                    height: 50px;
+                }
+                p{
+                    color: $gray;
+                    line-height: 1.6em;
+                    text-align: center
                 }
             }
         }
@@ -57,11 +112,25 @@ $grad: linear-gradient(#28024d , #e50872);
         .topWrap{
             margin-bottom: 0;
         }
+        .blog{
+            padding-left: $mob;
+            padding-right: $mob;
+        }
+        .jobOffer{
+            .jobFlex{
+                padding-left: $mob;
+                padding-right: $mob;
+            }
+        }
     }
 }
 @media screen and (max-width: 930px){
     .topImg > .topWrap{
         margin-top: 50px;
+        padding-right: $mob;
+        .topHead{
+            text-align: center;
+        }
     }
 }
 @media screen and (max-width: 800px){
@@ -71,6 +140,16 @@ $grad: linear-gradient(#28024d , #e50872);
             .blogFlex{
                 .blogUnit{
                    padding-bottom: 25px;
+                }
+            }
+        }
+        .jobOffer{
+            margin-top: 40px;
+            .jobFlex{
+                flex-wrap: wrap;
+                .jobUnit{
+                    flex-basis: 50%;
+                    margin-bottom: 30px;
                 }
             }
         }
@@ -87,7 +166,7 @@ $grad: linear-gradient(#28024d , #e50872);
 @media screen and (max-width: 480px) {
     .topImg{
         .blog > .blogFlex > .blogUnit > .header{
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
     }
 }
@@ -95,6 +174,13 @@ $grad: linear-gradient(#28024d , #e50872);
     .topImg{
         .blog > .blogFlex > .fixup{
             margin-top: 50px !important;
+        }
+        .jobOffer{
+            .jobFlex{
+                .jobUnit{
+                    flex-basis: 100%;
+                }
+            }
         }
     }
 }

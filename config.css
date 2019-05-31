@@ -2798,32 +2798,89 @@ footer .footNav ul li a {
 
 .topImg {
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 130px;
+  padding-bottom: 0px;
   padding-right: 16%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 0;
+  text-align: center;
 }
 
 .topImg .topWrap {
   -ms-flex-preferred-size: unset;
       flex-basis: unset;
+  margin-right: 16%;
 }
 
-.topImg .cd-product-viewer-wrapper, .topImg .cd-product-viewer-wrapper2 {
+.topImg .topWrap .topSubhead {
+  max-width: 750px;
+}
+
+.topImg .process {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.topImg .process .processFlex {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.topImg .process .processFlex .processUnit {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.topImg .process .processFlex .processUnit:last-of-type {
+  margin-right: 0;
+}
+
+.topImg .process .processFlex .processUnit h1 {
+  line-height: 1.35em;
+}
+
+.topImg .process .processFlex .processUnit .cd-product-viewer-wrapper, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-left: 0;
+  padding: 0 !important;
 }
 
-.topImg .cd-product-viewer-wrapper .fullscreen, .topImg .cd-product-viewer-wrapper2 .fullscreen {
+.topImg .process .processFlex .processUnit .cd-product-viewer-wrapper img, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 img {
+  max-width: 100%;
+}
+
+.topImg .process .processFlex .processUnit .cd-product-viewer-wrapper .product-viewer, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper .product-viewer2, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 .product-viewer, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 .product-viewer2 {
+  margin: 0;
+}
+
+.topImg .process .processFlex .processUnit .cd-product-viewer-wrapper .product-viewer .info, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper .product-viewer2 .info, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 .product-viewer .info, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 .product-viewer2 .info {
+  margin: 0 auto !important;
+  text-align: center !important;
+  width: 100%;
+}
+
+.topImg .process .processFlex .processUnit .cd-product-viewer-wrapper .fullscreen, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 .fullscreen {
   background: #e50872;
   color: white;
 }
 
-.topImg .popupMain .exit i {
+.topImg .process .processFlex .processUnit .popupMain .exit i {
   color: #e50872;
 }
 
-.topImg .popupMain .zoom {
+.topImg .process .processFlex .processUnit .popupMain .zoom {
   background: #e50872;
   color: white;
   border-radius: 50px;
@@ -2831,21 +2888,21 @@ footer .footNav ul li a {
   padding-right: 25px;
 }
 
-.topImg .popupMain .zoom:hover {
+.topImg .process .processFlex .processUnit .popupMain .zoom:hover {
   background: #f83995;
   -webkit-box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
           box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
-.topImg .popupMain .zoom:active {
+.topImg .process .processFlex .processUnit .popupMain .zoom:active {
   background: #b40659;
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
 }
 
-.topImg .popupMain .unzoom {
+.topImg .process .processFlex .processUnit .popupMain .unzoom {
   background: #e50872;
   color: white;
   border-radius: 50px;
@@ -2853,27 +2910,27 @@ footer .footNav ul li a {
   padding-right: 25px;
 }
 
-.topImg .popupMain .unzoom:hover {
+.topImg .process .processFlex .processUnit .popupMain .unzoom:hover {
   background: #f83995;
   -webkit-box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
           box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
-.topImg .popupMain .unzoom:active {
+.topImg .process .processFlex .processUnit .popupMain .unzoom:active {
   background: #b40659;
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
 }
 
-.topImg .popupMain .zoomInfo {
+.topImg .process .processFlex .processUnit .popupMain .zoomInfo {
   color: #e50872;
 }
 
-@media screen and (max-width: 1600px) {
-  .topImg {
-    padding-right: 6%;
+@media screen and (max-width: 1400px) {
+  .topImg .topWrap {
+    margin-right: 6%;
   }
 }
 
@@ -2900,6 +2957,31 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 980px) {
+  .topImg .process {
+    margin-top: 10px;
+  }
+  .topImg .process .processFlex .processUnit {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: unset;
+    padding: 35px 30px 0px 30px;
+  }
+  .topImg .process .processFlex .processUnit h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .topImg .process .processFlex .processUnit .text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper, .topImg .process .processFlex .processUnit .cd-product-viewer-wrapper2 {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 930px) {
   .topImg {
     padding-top: 150px;
@@ -2912,18 +2994,34 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .colorpicker {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 520px) {
-  .topImg > .topWrap > .topHead {
+  .topImg .topWrap > .topHead {
     font-size: 2em;
+  }
+  .topImg .process .processFlex .processUnit {
+    padding: 15px 5%;
+  }
+  .topImg .process .processFlex .processUnit h1 {
+    font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .topImg > .topWrap .topHead {
+  .topImg .topWrap .topHead {
     font-size: 1.6em;
   }
-  .topImg > .topWrap .topSubhead {
+  .topImg .topWrap .topSubhead {
     display: block;
+  }
+  .topImg .process .processFlex .processUnit h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
   }
 }
 
