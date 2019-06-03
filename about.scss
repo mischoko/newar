@@ -32,6 +32,9 @@ $grad: linear-gradient(#28024d , #e50872);
         margin-bottom: 50px;
         .blogFlex{
             .blogUnit{
+                .header{
+                    margin-bottom: 20px;
+                }
                 .text{
                     display: block;
                     overflow: none;
@@ -64,6 +67,21 @@ $grad: linear-gradient(#28024d , #e50872);
             }
         }
     }
+    #jobOfferID{
+        .circles{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 17px;
+            .fa-circle{
+              font-size: .5em;
+              color: $gray;
+              transition-duration: .25s;
+              &:nth-of-type(2){
+                margin: 0 10px;
+              }
+            }
+          }
+    }
     .jobOffer{
         .jobHead{
             text-align: center;
@@ -72,7 +90,7 @@ $grad: linear-gradient(#28024d , #e50872);
             margin-top: 0;
         }
         .jobText{
-            max-width: 600px;
+            max-width: 900px;
             color: $gray;
             line-height: 1.6em;
             margin: 0 auto;
@@ -137,11 +155,9 @@ $grad: linear-gradient(#28024d , #e50872);
     .topImg{
         .blog{
             margin-bottom: 0;
-            .blogFlex{
-                .blogUnit{
-                   padding-bottom: 25px;
-                }
-            }
+        }
+        #jobOfferID{
+            display: none;
         }
         .jobOffer{
             margin-top: 40px;
@@ -163,10 +179,16 @@ $grad: linear-gradient(#28024d , #e50872);
        }
     }
 }
+@media screen and (max-width: 535px) {
+    .topImg > .blog > .blogFlex > .blogUnit > .blogImg03, .blogImg04{
+        height: 200px !important;
+    }
+}
 @media screen and (max-width: 480px) {
     .topImg{
         .blog > .blogFlex > .blogUnit > .header{
             font-size: 1.1em;
+            margin-bottom: 15px;
         }
     }
 }

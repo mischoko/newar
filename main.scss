@@ -257,6 +257,11 @@ nav ul {
       border-radius: 15px;
       box-shadow: -5px -3px 28px rgba(0,0,0,.15);
       margin-bottom: 50px;
+      .numbPink{
+        font-size: 2em;
+        color: $pink;
+        margin-top: 5px;
+      }
       .processIcon01{
         background: url('imgs/process01.svg')no-repeat center;
         background-size: cover;
@@ -335,6 +340,10 @@ nav ul {
           }
         }
       }
+    }
+    //ar vsiual in nums
+    .maximus{
+      min-height: 130px;
     }
     //kgb fixup
     .kgb{
@@ -440,6 +449,22 @@ nav ul {
       }
       .tImg2{
         background: url('imgs/testimonials/greenmood.jpg') no-repeat center;
+        background-size: cover;
+        width: 90px;
+        height: 90px;
+        align-self: center;
+        border-radius: 60px;
+      }
+      .tImg4{
+        background: url('https://www.tech-festival.com/__resource/peopleProfiles/07872FE-BA72-4D9E-AD98-815A74131164-profileimgupload.jpg') no-repeat center;
+        background-size: cover;
+        width: 90px;
+        height: 90px;
+        align-self: center;
+        border-radius: 60px;
+      }
+      .shrenik{
+        background: url('imgs/testimonials/shrenik.jpg') no-repeat center;
         background-size: cover;
         width: 90px;
         height: 90px;
@@ -906,7 +931,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-self: center;
-        h1, p{
+        h1, p, a{
           margin-left: 25%;
         }
       }
@@ -959,8 +984,6 @@ footer{
     }
   }
 }
-
-
 ////////////////////////////MEDIAQUERIES////////////////////////////
 ////////////////////////////MEDIAQUERIES////////////////////////////
 ////////////////////////////MEDIAQUERIES////////////////////////////
@@ -977,6 +1000,9 @@ footer{
   .process{
     padding-left: $mob;
     padding-right: $mob;
+    .processFlex > .processUnit > .numbPink{
+      font-size: 1.6em;
+    }
   }
   //client section
   .cliLogos{
@@ -1045,6 +1071,9 @@ footer{
       }
     }
   }
+  .process > .processNum, .processSep{
+    display: none;
+  }
   //clients header
   .cliHeader{
     margin-top: 40px;
@@ -1060,7 +1089,7 @@ footer{
   }
   //footer
   footer >.footFlex > .footInfo > .colInfo1{
-    h1, p{
+    h1, p, a{
       margin-left: 0 ;
     }
   }

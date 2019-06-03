@@ -321,6 +321,12 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 
+.process .processFlex .processUnit .numbPink {
+  font-size: 2em;
+  color: #e50872;
+  margin-top: 5px;
+}
+
 .process .processFlex .processUnit .processIcon01 {
   background: url("imgs/process01.svg") no-repeat center;
   background-size: cover;
@@ -418,6 +424,10 @@ nav ul li a:hover {
   color: lightgray;
   -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.process .processFlex .maximus {
+  min-height: 130px;
 }
 
 .process .processFlex .kgb {
@@ -553,6 +563,28 @@ nav ul li a:hover {
 
 .owl-carousel .testimonial .imgPart .tImg2 {
   background: url("imgs/testimonials/greenmood.jpg") no-repeat center;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 60px;
+}
+
+.owl-carousel .testimonial .imgPart .tImg4 {
+  background: url("https://www.tech-festival.com/__resource/peopleProfiles/07872FE-BA72-4D9E-AD98-815A74131164-profileimgupload.jpg") no-repeat center;
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 60px;
+}
+
+.owl-carousel .testimonial .imgPart .shrenik {
+  background: url("imgs/testimonials/shrenik.jpg") no-repeat center;
   background-size: cover;
   width: 90px;
   height: 90px;
@@ -1198,7 +1230,7 @@ footer .footFlex .footInfo .colInfo1 {
       align-self: center;
 }
 
-footer .footFlex .footInfo .colInfo1 h1, footer .footFlex .footInfo .colInfo1 p {
+footer .footFlex .footInfo .colInfo1 h1, footer .footFlex .footInfo .colInfo1 p, footer .footFlex .footInfo .colInfo1 a {
   margin-left: 25%;
 }
 
@@ -1281,6 +1313,9 @@ footer .footNav ul li a {
     padding-left: 6%;
     padding-right: 6%;
   }
+  .process .processFlex > .processUnit > .numbPink {
+    font-size: 1.6em;
+  }
   .cliLogos {
     max-width: unset;
   }
@@ -1342,6 +1377,9 @@ footer .footNav ul li a {
   .process > .processFlex .kgb:last-of-type {
     margin-top: 50px !important;
   }
+  .process > .processNum, .processSep {
+    display: none;
+  }
   .cliHeader {
     margin-top: 40px;
   }
@@ -1353,7 +1391,7 @@ footer .footNav ul li a {
   .quote {
     left: 18%;
   }
-  footer > .footFlex > .footInfo > .colInfo1 h1, footer > .footFlex > .footInfo > .colInfo1 p {
+  footer > .footFlex > .footInfo > .colInfo1 h1, footer > .footFlex > .footInfo > .colInfo1 p, footer > .footFlex > .footInfo > .colInfo1 a {
     margin-left: 0;
   }
 }
@@ -2764,6 +2802,10 @@ footer .footNav ul li a {
   margin-bottom: 50px;
 }
 
+.topImg .blog .blogFlex .blogUnit .header {
+  margin-bottom: 20px;
+}
+
 .topImg .blog .blogFlex .blogUnit .text {
   display: block;
   overflow: none;
@@ -2802,6 +2844,23 @@ footer .footNav ul li a {
   opacity: 1;
 }
 
+.topImg #jobOfferID .circles {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.topImg #jobOfferID .circles .fa-circle {
+  font-size: .5em;
+  color: #808080;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.topImg #jobOfferID .circles .fa-circle:nth-of-type(2) {
+  margin: 0 10px;
+}
+
 .topImg .jobOffer .jobHead {
   text-align: center;
   font-size: 2.5em;
@@ -2810,7 +2869,7 @@ footer .footNav ul li a {
 }
 
 .topImg .jobOffer .jobText {
-  max-width: 600px;
+  max-width: 900px;
   color: #808080;
   line-height: 1.6em;
   margin: 0 auto;
@@ -2891,8 +2950,8 @@ footer .footNav ul li a {
   .topImg .blog {
     margin-bottom: 0;
   }
-  .topImg .blog .blogFlex .blogUnit {
-    padding-bottom: 25px;
+  .topImg #jobOfferID {
+    display: none;
   }
   .topImg .jobOffer {
     margin-top: 40px;
@@ -2917,9 +2976,16 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 535px) {
+  .topImg > .blog > .blogFlex > .blogUnit > .blogImg03, .blogImg04 {
+    height: 200px !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .topImg .blog > .blogFlex > .blogUnit > .header {
     font-size: 1.1em;
+    margin-bottom: 15px;
   }
 }
 
