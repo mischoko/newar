@@ -1,0 +1,230 @@
+@import 'main';
+
+//vars
+$init: 16%;
+$mob: 6%;
+$pink: #e50872;
+$gray: #808080;
+$dark: #1a1a1a;
+$grad: linear-gradient(#28024d , #e50872);
+
+//top images
+.topImg{
+    background-image: url('imgs/vzor_cs_big.jpg');
+    .topWrap{
+        margin: 0 auto !important;
+        padding-right: 0;
+        .topHead, .topSubhead{
+            display: block !important;
+            text-align: center;
+        }
+    }
+}
+.GL{
+    background-image: url('imgs/gant_lights_cs_big.jpg');
+}
+.wg{
+    background-image: url('imgs/wooden_germany_cs_big.jpg');
+}
+.tuli{
+    background-image: url('imgs/tuli_cs_big.jpg');
+    background-position: right;
+}
+.gm{
+    background-image: url('imgs/greenmood_cs_big.jpg');
+    background-position: right;
+}
+.gf{
+    background-image: url('imgs/glamm_fire_cs_big.jpg');
+}
+.cinier{
+    background-image: url('imgs/cinier_cs_big.jpg');
+    background-position: right;
+}
+.heymat{
+    background-image: url('imgs/heymat_cs_big.jpg');
+}
+//shadow
+.shade{
+    text-shadow: 1px 2px 5px rgba(0,0,0,.65);
+}
+//upper blocks
+.process{
+    .processFlex{
+        .processUnit{
+            flex-basis: 50%;
+            display: block;
+            margin-bottom: 0;
+        }
+        .seconde{
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+    //testimonal
+    .testimony{
+        margin: 80px auto;
+        max-width: 600px;
+        border-radius: 15px;
+        background: white;
+        box-shadow: -5px -6px 17px rgba(0,0,0,.14);
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: row;
+        .bio{
+            flex-basis: 30%;
+            margin-right: 25px;
+            align-self: center;
+            .testHead{
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                margin: 0 auto;
+            }
+            //testimonial names
+            .jakub{
+                background-image: url('imgs/testimonials/vzor.jpg');
+            }
+            .stefan{
+                background-image: url('imgs/testimonials/gantlights.jpg');
+            }
+            .genrih{
+                background-image: url('https://media.licdn.com/dms/image/C5603AQF-aCKev6VYQg/profile-displayphoto-shrink_800_800/0?e=1563408000&v=beta&t=_rKwVhFjHGz-yTx-LNtkFkb-IMHhnOCdBnZtugfH0N4');
+            }
+            .guttman{
+                background-image: url('imgs/testimonials/tuli.jpg');
+            }
+            .sadig{
+                background-image: url('imgs/testimonials/greenmood.jpg');
+            }
+            .isabel{
+                background-image: url('imgs/testimonials/glammfire.jpg');
+            }
+            .cinier{
+                background-image: url('imgs/testimonials/cinier.jpg');
+            }
+            .sonja{
+                background-image: url('imgs/testimonials/heymat.jpg');
+            }
+            //end of testimonial names
+            .job{
+                text-align: center;
+                color: $gray;
+                line-height: 1.6em;
+                span{
+                    display: none;
+                }
+                a{
+                    color: $pink;
+                    &:hover{
+                        color: #f83995;
+                    }
+                }
+            }
+        }
+        .testTxt{
+            flex-basis: 70%;
+            color: $gray;
+            line-height: 1.6em;
+            align-self: center;
+        }
+    }
+    //video
+    .videoWrap{
+        .video{
+            flex-basis: 50%;
+            position: relative;
+            padding-bottom: 52.25%;
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 60px;
+            iframe{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1070px) {
+    .process > .processFlex > .processUnit{
+        padding-bottom: 4%;
+    }
+}
+@media screen and (max-width: 980px) {
+    .process {
+        .testimony{
+            max-width: 650px;
+            margin-top: 0px;
+        }
+        .processFlex{
+            .processUnit{
+                h1{
+                    font-size: 1.6em;
+                }
+            }
+            .seconde{
+                margin-top: unset !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .topImg{
+        .topWrap{
+            .topSubhead{
+                margin-top: 0;
+            }
+        }
+    }
+    .process > .testimony {
+        flex-direction: column;
+        .bio {
+            margin-right: 0;
+            .job{
+                line-height: 1.6em;
+                margin-bottom: 10px;
+                br{
+                    display: none;
+                }
+                span{
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    .process > .testimony{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .process{
+        .processFlex{
+            .processUnit{
+                padding-bottom: 6%;
+            }
+            .seconde{
+                &:nth-of-type(2){
+                    margin-top: 10px !important;
+                }
+            }
+        }
+        .testimony{
+            .bio > .job{
+                br{
+                    display: block;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

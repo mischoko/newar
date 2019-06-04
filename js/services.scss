@@ -1,0 +1,898 @@
+@import 'main';
+
+//vars
+$init: 16%;
+$mob: 6%;
+$pink: #e50872;
+$gray: #808080;
+$dark: #1a1a1a;
+$grad: linear-gradient(#28024d , #e50872);
+
+.padFix{
+    padding-bottom: 20px !important;
+}
+.fa-chevron-down{
+    color: $gray;
+    font-size: 1.5em;
+    
+}
+.rotateMargin{
+    transition-duration: .25s;
+    margin-bottom: 15px !important;
+    i{
+    color: $pink;
+    }
+}
+
+//top image
+.topImg{
+    background: white;
+    box-shadow: -5px -2px 17px rgba(0, 0, 0, 0.17);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 700px;
+    position: relative;
+    .topWrap{
+        flex-basis: 50%;
+        margin-right: 20px;
+        .topHead{
+            color: $pink;
+        }
+        .topSubhead{
+            font-size: 1em;
+            color: $gray;
+        }
+    }
+    .ARimg{
+        flex-basis: 50%;
+        width: 500px;
+        height: 500px;
+        background: url('imgs/ar_app.jpg')no-repeat center;
+        background-size: contain;
+        margin-right: $init;
+        margin-left: 20px;
+        align-self: center;
+        max-width: 90%;
+    }
+}
+//process > using AR
+.process{
+    padding-top: 30px;
+    margin-top: -15px;
+    .processFlex{
+        margin-top: 50px;
+        &:nth-of-type(2){
+            margin-top: 0;
+        }
+        .processUnit{
+            margin-top: 0;
+            padding-bottom: 30px;
+            h1{
+                color: $pink;
+                font-size: 1.5em;
+            }
+        }
+    }
+    .vidText{
+        color: $gray;
+        line-height: 1.8em;
+        text-align: center;
+    }
+    //video iframes
+    .videoCont{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 60px;
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 26.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+            width: 50%;
+            &:nth-of-type(1){
+                margin-right: 20px;
+            }
+            &:nth-of-type(2){
+                margin-left: 20px;
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .vidBtn{
+        margin-top: 40px;
+    }
+}
+.requestDemo{
+    height: 360px;
+    h1{
+        padding-top: 15px;
+    }
+}
+//services
+.services{
+    padding-left: $init;
+    padding-right: $init;
+    padding-bottom: 30px;
+    z-index: 22;
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: -5px -6px 17px rgba(0,0,0,.14);
+    .servHeader{
+      text-align: center;
+      font-size: 2em;
+      margin-top: 0;
+      padding-top: 40px;
+      margin-bottom: 35px;
+    }
+    .AR{
+        border-radius: 15px;
+        background: white;
+        box-shadow: -5px -6px 17px rgba(0,0,0,.14);
+        margin-bottom: 80px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        .imgAR{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            flex-basis: 40%;
+            background: url('imgs/augmented-reality.jpg')no-repeat left;
+            background-size: cover;
+        }
+        .textAR{
+            flex-basis: 60%;
+            padding: 30px 50px;
+            h1{
+                color: $pink;
+                font-size: 2em;
+                line-height: 1.35em;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            p{
+                color: $gray;
+                line-height: 1.7em;
+            }
+            h2{
+                color: $pink;
+                margin-bottom: 0;
+                font-size: 1.3em;
+                margin-top: 30px;
+            }
+            ul{
+                color: $gray;
+                line-height: 2.3em;
+                margin-top: 10px;
+                padding-left: 20px;
+            }
+            .compatibility{
+                br{
+                    display: none;
+                }
+                margin-bottom: 0;
+                i{
+                    font-size: 2em;
+                }
+                .fa-android{
+                    transform: translatey(6px);
+                }
+                .fa-apple{
+                    transform: translatey(3px);
+                }
+            }
+        }
+    }
+    .platformHeader{
+        text-align: center;
+        font-size: 2em;
+        margin-top: 0;
+        padding-top: 60px;
+        margin-bottom: 55px;
+    }
+    //platform
+    .platform{
+        display: flex;
+        flex-direction: row;
+        .imgPlatform{
+            flex-basis: 40%;
+            background: url('imgs/ar_app.jpg')no-repeat center;
+            background-size: contain;
+        }
+        .textAR{
+            flex-basis: 60%;
+            padding: 30px 50px;
+            h1{
+                color: $pink;
+                font-size: 2em;
+                line-height: 1.35em;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            p{
+                color: $gray;
+                line-height: 1.7em;
+            }
+            h2{
+                color: $pink;
+                margin-bottom: 0;
+                font-size: 1.3em;
+                margin-top: 30px;
+            }
+            ul{
+                color: $gray;
+                line-height: 2.3em;
+                margin-top: 10px;
+                padding-left: 20px;
+            }
+            .compatibility{
+                br{
+                    display: none;
+                }
+                margin-bottom: 0;
+                i{
+                    font-size: 2em;
+                }
+                .fa-android{
+                    transform: translatey(6px);
+                }
+                .fa-apple{
+                    transform: translatey(3px);
+                }
+            }
+        }
+    }
+    //web AR solution
+    .webAR{
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        .imgWebAR{
+            flex-basis: 40%;
+            background: url('imgs/web-augmented-reality.jpg')no-repeat center;
+            background-size: contain;
+        }
+        .textAR{
+            flex-basis: 60%;
+            padding: 30px 50px;
+            h1{
+                color: $pink;
+                font-size: 2em;
+                line-height: 1.35em;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            p{
+                color: $gray;
+                line-height: 1.7em;
+                span{
+                    background: #eaebeb;
+                    padding: 4px 12px 3px 12px;
+                    border-radius: 4px;
+                    color: black;
+                }
+            }
+            h2{
+                color: $pink;
+                margin-bottom: 0;
+                font-size: 1.3em;
+                margin-top: 30px;
+            }
+            ul{
+                color: $gray;
+                line-height: 2.3em;
+                margin-top: 10px;
+                padding-left: 20px;
+            }
+            .compatibility{
+                margin-bottom: 0;
+                i{
+                    font-size: 2em;
+                }
+                .fa-android{
+                    transform: translatey(6px);
+                }
+                .fa-apple{
+                    transform: translatey(3px);
+                }
+            }
+        }
+    }
+    //flex webAR adjustment
+    .switchOn{
+        display: none;
+    }
+    //process
+    .process{
+        padding: 0;
+        margin: 0;
+        border-radius: none;
+        background: none;
+        width: unset;
+        box-shadow: none;
+        .processFlex{
+            margin-bottom: -155px;
+            .processUnit{
+                padding-top: 25px;
+                .processIcon01{background: url('imgs/ar_process01.svg')no-repeat center;}
+                .processIcon02{background: url('imgs/ar_process02.svg')no-repeat center;}
+                .processIcon03{background: url('imgs/ar_process03.svg')no-repeat center;}
+                h1{
+                    margin-top: 15px;
+                    color: $dark;
+                    line-height: 1.35em;
+                }
+                .text{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+//newsletter
+.newsletter{
+    height: 500px;
+    h1{
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .topImg{
+        .topWrap{
+            margin-left: $mob;
+        }
+        .ARimg{
+            margin-right: $mob;
+        }
+    }
+    //services
+    .services{
+        padding-left: $mob;
+        padding-right: $mob;
+        .AR{
+            .textAR{
+                h1{
+                    font-size: 1.6em;
+                }
+            }
+        }
+        .platform{
+            .textAR{
+                padding-right: 0;
+                h1{
+                    font-size: 1.6em;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .webAR{
+            .textAR{
+                padding-right: 0;
+                h1{
+                    font-size: 1.6em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1210px) {
+    .services{
+        .platform{
+            .imgPlatform{
+                    flex-basis: 40%;
+                    background: url('imgs/ar_app.jpg')no-repeat top;
+                    background-size: 120%;
+            }
+        }
+        .webAR{
+            .textAR{
+                .switch{
+                    display: none;
+                }
+            }
+        }
+        .switchOn{
+            display: block;
+            h1{
+                color: $pink;
+                font-size: 2em;
+                line-height: 1.35em;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+            p{
+                color: $gray;
+                line-height: 1.7em;
+            }
+            h2{
+                color: $pink;
+                margin-bottom: 0;
+                font-size: 1.3em;
+                margin-top: 30px;
+            }
+            ul{
+                color: $gray;
+                line-height: 2.3em;
+                margin-top: 10px;
+                padding-left: 20px;
+            }
+            .compatibility{
+                margin-bottom: 0;
+                br{
+                    display: none;
+                }
+                i{
+                    font-size: 2em;
+                }
+                .fa-android{
+                    transform: translatey(6px);
+                }
+                .fa-apple{
+                    transform: translatey(3px);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .topImg {
+        .topWrap > .topHead{
+            font-size: 2em;
+        }
+        .ARimg{
+            background-size: cover;
+        }
+    }
+    //services
+    .services{
+        .AR{
+            flex-direction: column;
+            .imgAR{
+                width: 100%;
+                height: 450px;
+                flex-basis: unset;
+                background-position: bottom;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 15px;
+            }
+            .textAR{
+                padding-top: 45px;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+        .platformHeader{
+            padding-top: 30px;
+            margin-bottom: 35px;
+        }
+        .platform{
+            flex-direction: column;
+            .imgPlatform{
+                background: url('imgs/platform.jpg')no-repeat center;
+                background-size: cover;
+                height: 400px;
+                flex-basis: unset;
+            }
+            .textAR{
+                padding-left: 0;
+                padding-right: 0;
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+        .webAR{
+            .textAR{
+                h1{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .process > .processFlex{
+        margin-top: 110px !important;
+        .processUnit{
+            max-width: 350px;
+        }
+    }
+    .newsletter{
+        height: 570px;
+        h1{
+            padding-top: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .topImg{
+        padding-top: 55px;
+        height: 500px;
+        .topWrap{
+            margin-right: 0;
+            padding-right: 0;
+            .topHead{
+                font-size: 1.5em;
+            }
+            .topHide{
+                display: none;
+            }
+        }
+        .ARimg{
+            background-size: contain;
+        }
+    }
+    //services
+    .services{
+        .webAR{
+            margin-top: 20px;
+            flex-direction: column-reverse;
+            .imgWebAR{
+                background: url('imgs/webAr.jpg')no-repeat center;
+                background-size: contain;
+                flex-basis: unset;
+                min-height: 350px;
+                width: 100%;
+            }
+            .textAR{
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 780px) {
+    //process / video
+    .process{
+        .videoCont{
+            flex-direction: column;
+            margin-top: 40px;
+            .videoWrapper{
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 30px;
+                padding-bottom: 51.25%;
+                width: 100%;
+            }
+        }
+        .cliHeader{
+            &:last-of-type{
+                margin-top: 60px;
+            }
+        }
+        .vidText{
+            br{
+                display: none;
+            }
+        }
+        .vidBtn{
+            margin-top: 20px;
+        }
+    }
+    .ctaConfig{
+        padding-left: $mob;
+        padding-right: $mob;
+        p{
+            br{
+                display: none;
+            }
+        }  
+    }
+    //services
+    .services{
+        .servHeader{
+            font-size: 1.5em;
+        }
+        .platformHeader{
+            font-size: 1.5em;
+        }
+        .platform{
+            .imgPlatform{
+                height: 320px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    //initial hide of dowpdown functionality for using AR mobile view 
+        .txt0, .txt1, .txt2, .txt3, .txt4, .txt5{
+            display: none;
+        }
+    .topImg{
+        height: 950px;
+        flex-direction: column;
+        padding-top: 145px;
+        .topWrap{
+            flex-basis: 35%;
+            padding-right: $mob;
+            .topHead{
+                text-align: center;
+                br{
+                    display: none;
+                }
+            }
+            .topHide{
+                display: block;
+            }
+        }
+        .ARimg{
+            flex-basis: 65%;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+    }
+    //configurator
+    .ctaConfig{
+        height: 400px;
+        h1{
+            font-size: 1.5em;
+        }
+    }
+    //services
+    .services{
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 380px;
+            }
+            .textAR{
+                padding-left: 30px;
+                padding-right: 30px;
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                .compatibility{
+                    text-align: center;
+                    br{
+                        display: block;
+                    }
+                    .fab{
+                        font-size: 2.5em !important;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .platform{
+            .imgPlatform{
+                height: 240px;
+                border-radius: 15px;
+            }
+            .textAR{
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                .compatibility{
+                    text-align: center;
+                    br{
+                        display: block;
+                    }
+                    .fab{
+                        font-size: 2.5em !important;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        .webAR{
+            .imgWebAR{
+                min-height: 260px;
+            }
+            .textAR{
+                padding-bottom: 10px;
+                h2{
+                    text-align: center;
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+        .switchOn{
+            margin-bottom: 120px;
+            .compatibility{
+                text-align: center;
+                br{
+                    display: block;
+                }
+                .fab{
+                    font-size: 2.5em !important;
+                    margin-bottom: 20px;
+                }
+            }
+            h2{
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.4em;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px){
+    //newsletter
+    .newsletter{
+        height: 630px;
+        h1{
+            padding-top: 140px;
+        }
+    }
+  //benefits  / process
+    .process{
+        .cliHeader{
+            &:first-of-type{
+                margin-top: 5px;
+            }
+        }
+        .processFlex{
+            margin-top: 90px !important;
+        }
+    }
+    //services
+    .services{
+        .AR{
+            .textAR{
+                padding-top: 25px;
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .platform{
+            .textAR{
+                padding-top: 25px;
+                h1{
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .webAR{
+            .imgWebAR{
+                background: url('imgs/web-augmented-reality.jpg')no-repeat center;
+                background-size: cover;
+                min-height: unset;
+                height: 600px;
+            }
+            .textAR{
+                ul{
+                    line-height: 1.8em;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    .topImg{
+        .ARimg{
+            background-size: contain;
+        }
+    }
+    //configurator
+    .ctaConfig{
+        height: 450px;
+        h1{
+            line-height: 1.35em;
+        }
+    }
+    //services
+    .services{
+        .servHeader{
+            font-size: 1.3em;
+            line-height: 1.5em;
+        }
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 290px;
+            }
+            .textAR{
+                h1{
+                    font-size: 1.2em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .topImg{
+        padding-top: 165px;
+        height: 800px;
+        .topHead{
+            &:nth-of-type(1){
+                display: block !important;
+            }
+        }
+        .ARimg{
+            flex-basis: 60%;
+        }
+    }
+    //demo request
+    .requestDemo{
+        .ctaBtn{
+            margin-top: 5px;
+        }
+    }
+    //process
+    .process{
+        .processFlex{
+            .processUnit{
+                h1{
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .cliHeader{
+            &:first-of-type{
+                height: 40px;
+                font-size: 1.3em;
+            }
+            &:last-of-type{
+                font-size: 1.3em;
+                margin-top: 50px;
+            }
+        }
+        .vidBtn{
+            margin-top: 0;
+        }
+    }
+    //services
+    .services{
+        .servHeader{
+            padding-top: 25px;
+            margin-bottom: 25px;
+        }
+        .AR{
+            .imgAR{
+                background-position: left;
+                height: 210px;
+            }
+            .textAR{
+                padding-left: 20px;
+                    padding-right: 20px;
+                ul{
+                    line-height: 1.55em;
+                    padding-left: 15px;
+                    li{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

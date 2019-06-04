@@ -2844,6 +2844,23 @@ footer .footNav ul li a {
   opacity: 1;
 }
 
+.topImg #jobOfferID .circles {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.topImg #jobOfferID .circles .fa-circle {
+  font-size: .5em;
+  color: #808080;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.topImg #jobOfferID .circles .fa-circle:nth-of-type(2) {
+  margin: 0 10px;
+}
+
 .topImg .jobOffer .jobHead {
   text-align: center;
   font-size: 2.5em;
@@ -2933,9 +2950,6 @@ footer .footNav ul li a {
   .topImg .blog {
     margin-bottom: 0;
   }
-  .topImg .blog .blogFlex .blogUnit {
-    padding-bottom: 25px;
-  }
   .topImg #jobOfferID {
     display: none;
   }
@@ -2962,9 +2976,16 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 535px) {
+  .topImg > .blog > .blogFlex > .blogUnit > .blogImg03, .blogImg04 {
+    height: 200px !important;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .topImg .blog > .blogFlex > .blogUnit > .header {
     font-size: 1.1em;
+    margin-bottom: 15px;
   }
 }
 
