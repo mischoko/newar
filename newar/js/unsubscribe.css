@@ -1,0 +1,197 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url("https://cdn.wetransfer.net/ivise/eyJwaXBlbGluZSI6W1sic3JnYiIse31dLFsiYXV0b19vcmllbnQiLHt9XSxbImZpdF9jcm9wIix7IndpZHRoIjoxMjgwLCJoZWlnaHQiOjgwMCwiZ3Jhdml0eSI6ImMifV0sWyJzaGFycGVuIix7InJhZGl1cyI6MC43NSwic2lnbWEiOjAuNX1dXSwic3JjX3VybCI6Imh0dHBzOi8vd2V0cmFuc2ZlcnBsdXNpbWFnZXMuczMuZXUtd2VzdC0xLmFtYXpvbmF3cy5jb20vZTZjZDJkYjUtOTMyNC00NmZhLTk4NDUtYjhiNThmYTk2MmEzLTIwMTgxMjExMTkwMi5qcGcifQ/b452f5cd661ce82878f41456c670caa09e89896076557c0d1241c398a98a8f52") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.midBg {
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 20px 50px;
+  -webkit-box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.19);
+          box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.19);
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.midBg h1 {
+  margin: 0;
+  color: #1a1a1a;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.midBg p {
+  color: #808080;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.midBg form {
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.midBg form input {
+  border: none;
+  padding: 7px 50px 6px 50px;
+  text-align: center;
+  background: white;
+  -webkit-box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.19);
+          box-shadow: -3px 2px 12px rgba(0, 0, 0, 0.19);
+  margin-right: 20px;
+  border-radius: 50px;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.midBg form input:focus {
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.midBg form button {
+  border-radius: 50px;
+  background: #e50872;
+  border: none;
+  padding: 7px 25px 6px 25px;
+  color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+}
+
+.midBg form button:hover {
+  background: #f83995;
+  -webkit-box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.midBg form button:active {
+  background: #b40659;
+  color: lightgray;
+  -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.midBg form button:focus {
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: 0;
+}
+
+.midBg .logo {
+  width: 35px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.success {
+  display: none;
+}
+
+.success .okBtn {
+  border-radius: 50px;
+  background: #e50872;
+  border: none;
+  padding: 7px 25px 6px 25px;
+  color: white;
+  -webkit-transition-duration: .25s;
+          transition-duration: .25s;
+  margin: 0 auto;
+}
+
+.success .okBtn:hover {
+  background: #f83995;
+  -webkit-box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: -5px 0px 17px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.success .okBtn:active {
+  background: #b40659;
+  color: lightgray;
+  -webkit-box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -3px -1px 10px rgba(0, 0, 0, 0.25);
+}
+
+.success .okBtn:focus {
+  outline: none;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .midBg {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .midBg p {
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 10px;
+  }
+  .midBg form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .midBg form button {
+    max-width: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .midBg form #email {
+    margin-right: 0;
+    width: 260px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=unsubscribe.css.map */

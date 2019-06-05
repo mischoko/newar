@@ -239,13 +239,18 @@ nav ul li a:hover {
 }
 
 .topImg {
-  background: url("imgs/mainBg.jpg") no-repeat center;
-  background-size: cover;
   width: 100%;
-  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 0px;
+  height: 700px;
+}
+
+.topImg video {
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 
 .topImg .topWrap {
@@ -254,6 +259,7 @@ nav ul li a:hover {
       align-self: center;
   margin-left: 16%;
   margin-top: 0px;
+  z-index: 9;
 }
 
 .topImg .topWrap .topHead {
@@ -1331,6 +1337,15 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .topImg {
+    height: 580px;
+  }
+  .topImg video {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .blog > .blogFlex > .blogUnit .blogImg01, .blog > .blogFlex > .blogUnit .blogImg02 {
     height: 200px;
@@ -1692,8 +1707,16 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .topImg video {
+    width: auto;
+    height: 50%;
+    right: 0;
+  }
+}
+
 @media screen and (max-width: 640px) {
-  .topImg > .topWrap > .topHead {
+  .topImg .topWrap > .topHead {
     font-size: 2em;
   }
   footer > .footFlex .map {
@@ -1701,9 +1724,18 @@ footer .footNav ul li a {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .topImg video {
+    height: 42%;
+  }
+}
+
 @media screen and (max-width: 535px) {
   .topImg {
     height: 410px;
+  }
+  .topImg video {
+    height: 34%;
   }
   .process {
     margin-left: 0;
@@ -1731,6 +1763,9 @@ footer .footNav ul li a {
 }
 
 @media screen and (max-width: 470px) {
+  .topImg video {
+    height: 43%;
+  }
   .topImg .topWrap .topHead {
     font-size: 1.5em;
   }
@@ -1794,6 +1829,9 @@ footer .footNav ul li a {
 }
 
 @media screen and (max-width: 380px) {
+  .topImg video {
+    height: 50%;
+  }
   .requestDemo > h1 {
     margin-bottom: 0;
   }
@@ -1847,6 +1885,12 @@ footer .footNav ul li a {
     width: 95%;
     margin-bottom: 20px;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .topImg video {
+    height: 57%;
   }
 }
 /*# sourceMappingURL=main.css.map */

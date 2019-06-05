@@ -124,6 +124,196 @@ $grad: linear-gradient(#28024d , #e50872);
             }
         }
     }
+    .allLogos{
+        padding-left: $init;
+        padding-right: $init;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        h2{
+            color: $pink;
+            margin-top: 50px;
+        }
+        .logoRow1, .logoRow2, .logoRow3, .logoRow4, .logoRow5, .logoRow6{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 1px solid #d2d2d2;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            .lgo{
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 60px;
+                flex-basis: 20%;
+                margin-bottom: 40px;
+            }
+            //furniture
+            .f1{
+                background-image: url('logos/f1.png');
+            }
+            .f2{
+                background-image: url('logos/f2.png');
+            }
+            .f3{
+                background-image: url('logos/f3.png');
+            }
+            .f4{
+                background-image: url('logos/f4.png');
+            }
+            .f5{
+                background-image: url('logos/f5.png');
+            }
+            .f6{
+                background-image: url('logos/f6.png');
+            }
+            .f7{
+                background-image: url('logos/f7.png');
+            }
+            .f8{
+                background-image: url('logos/f8.png');
+            }
+            .f9{
+                background-image: url('logos/f9.png');
+            }
+            .f10{
+                background-image: url('logos/f10.png');
+            }
+            .f11{
+                background-image: url('logos/f11.png');
+            }
+            .f12{
+                background-image: url('logos/f12.png');
+            }
+            .f13{
+                background-image: url('logos/f13.png');
+            }
+            .f14{
+                background-image: url('logos/f14.png');
+            }
+            .f15{
+                background-image: url('logos/f15.png');
+            }
+            .f16{
+                background-image: url('logos/f16.png');
+            }
+            .f17{
+                background-image: url('logos/f17.png');
+            }
+            .f18{
+                background-image: url('logos/f18.png');
+            }
+            .f19{
+                background-image: url('logos/f19.png');
+            }
+            .f21{
+                background-image: url('logos/f21.png');
+            }
+            .f22{
+                background-image: url('logos/f22.png');
+            }
+            .f23{
+                background-image: url('logos/f23.png');
+            }
+            .f24{
+                background-image: url('logos/f24.png');
+            }
+            .f25{
+                background-image: url('logos/f25.png');
+            }
+            .f26{
+                background-image: url('logos/f26.png');
+            }
+            .f27{
+                background-image: url('logos/f27.png');
+            }
+            //lighting
+            .l1{
+                background-image: url('logos/l1.png')
+            }
+            .l2{
+                background-image: url('logos/l2.png')
+            }
+            .l3{
+                background-image: url('logos/l3.png')
+            }
+            .l4{
+                background-image: url('logos/l4.png')
+            }
+            .l5{
+                background-image: url('logos/l5.png')
+            }
+            .l6{
+                background-image: url('logos/l6.png')
+            }
+            .l7{
+                background-image: url('logos/l7.png')
+            }
+            .l8{
+                background-image: url('logos/l8.png')
+            }
+            .l9{
+                background-image: url('logos/l9.png')
+            }
+            .l10{
+                background-image: url('logos/l10.png')
+            }
+            .l11{
+                background-image: url('logos/l11.png')
+            }
+            .l12{
+                background-image: url('logos/l12.png')
+            }
+            //fireplaces
+            .k1{
+                background-image: url('logos/k1.png')
+            }
+            .k2{
+                background-image: url('logos/k2.png')
+            }
+            .k3{
+                background-image: url('logos/k3.png')
+            }
+            .k4{
+                background-image: url('logos/k4.png')
+            }
+            //offices
+            .o1{
+                background-image: url('logos/o1.png')
+            }
+            .o2{
+                background-image: url('logos/o2.png')
+            }
+            .o3{
+                background-image: url('logos/o3.png')
+            }
+            .f20{
+                background-image: url('logos/f20.png');
+            }
+            //radiators
+            .r1{
+                background-image: url('logos/r1.png')
+            }
+            .r2{
+                background-image: url('logos/r2.png')
+            }
+            .r3{
+                background-image: url('logos/r3.png')
+            }
+            //other
+            .x1{
+                background-image: url('logos/x1.png')
+            }
+            .x2{
+                background-image: url('logos/x2.png')
+            }
+            .x3{
+                background-image: url('logos/x3.png')
+            }
+        }
+    }
 }
 @media screen and (max-width: 1400px) {
     .topImg{
@@ -140,14 +330,27 @@ $grad: linear-gradient(#28024d , #e50872);
                 padding-right: $mob;
             }
         }
+        .allLogos{
+            padding-left: $mob;
+            padding-right: $mob;
+        }
     }
 }
 @media screen and (max-width: 930px){
-    .topImg > .topWrap{
-        margin-top: 50px;
-        padding-right: $mob;
-        .topHead{
-            text-align: center;
+    .topImg {
+        .topWrap{
+            margin-top: 50px;
+            padding-right: $mob;
+            .topHead{
+                text-align: center;
+            }
+        }
+        .allLogos{
+            .logoRow1, .logoRow2, .logoRow3, .logoRow4, .logoRow5, .logoRow6{
+                .lgo{
+                    flex-basis: 30%;
+                }
+            }
         }
     }
 }
@@ -177,6 +380,13 @@ $grad: linear-gradient(#28024d , #e50872);
        .topWrap{
            padding-right: $mob;
        }
+       .allLogos{
+        .logoRow1, .logoRow2, .logoRow3, .logoRow4, .logoRow5, .logoRow6{
+            .lgo{
+                flex-basis: 50%;
+            }
+        }
+    }
     }
 }
 @media screen and (max-width: 535px) {

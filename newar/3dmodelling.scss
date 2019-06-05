@@ -1,0 +1,563 @@
+@import 'main';
+
+//vars
+$init: 16%;
+$mob: 6%;
+$pink: #e50872;
+$gray: #808080;
+$dark: #1a1a1a;
+$grad: linear-gradient(#28024d , #e50872);
+
+.topImg{
+    .topWrap{
+        padding-right: $init;
+    }
+}
+//tables
+.activated{
+    display: block;
+}
+
+//switch
+.wrapSwitch{
+    position: absolute;
+    display: block;
+    margin-top: -60px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    z-index: 66;
+  }
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .25s;
+    border-radius: 50px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .25s;
+    border-radius: 50px;
+  }
+  
+  input:checked + .slider {
+    background-color: $pink;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px none;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+//end switch
+.postProcess{
+    padding-bottom: 40px;
+    .processFlex{
+        .processUnit{
+            flex-basis: 100%;
+            justify-content: unset;
+            padding-bottom: 40px;
+            .iWrap{
+                p{
+                    color: $gray;
+                    line-height: 1.6;
+                    text-align: center;
+                    max-width: 800px;
+                    margin: 15px auto;
+                    margin-bottom: 30px;
+
+                }
+                .iFlex{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                    .iconFlex{
+                        flex-basis: 18%;
+                        h2{
+                            font-size: 1em;
+                            text-align: center;
+                            margin-top: 0;
+                        }
+                        .icon1{
+                            background: url('imgs/icons3d/ar.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon2{
+                            background: url('imgs/icons3d/view.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon3{
+                            background: url('imgs/icons3d/config.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon4{
+                            background: url('imgs/icons3d/obj.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon5{
+                            background: url('imgs/icons3d/sheet.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon6{
+                            background: url('imgs/icons3d/book.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon7{
+                            background: url('imgs/icons3d/like.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                        .icon8{
+                            background: url('imgs/icons3d/sofa.svg')no-repeat center;
+                            background-size: cover;
+                            width: 80px;
+                            height: 80px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .chair{
+                background: url('imgs/chair.jpg')no-repeat center;
+                background-size: contain;
+                background-color: white;
+                border-radius: 15px;
+                position: absolute;
+                box-shadow: -5px -3px 28px rgba(0,0,0,.15);
+                width: 380px;
+                height: 380px;
+                right: calc(16% - 50px);
+                margin-top: 170px;
+            }
+        }
+    }
+    //3d services section
+    .flex3d{
+        display: flex;
+        flex-direction: row;
+        .img3d{
+            flex-basis: 50%;
+        }
+        .text3d{
+            color: $gray;
+            line-height: 1.6em;
+            flex-basis: 50%;
+            margin-left: 20px;
+            .formats{
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+                .formIco{
+                    width: 60px;
+                    height: 60px;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    flex-basis: 14.28%;
+                }
+                .format1{
+                    background-image: url('imgs/formats/3ds.svg');
+                }
+                .format2{
+                    background-image: url('imgs/formats/gltf.svg');
+                }
+                .format3{
+                    background-image: url('imgs/formats/dwg.svg');
+                }
+                .format4{
+                    background-image: url('imgs/formats/dae.svg');
+                }
+                .format5{
+                    background-image: url('imgs/formats/stl.svg');
+                }
+                .format6{
+                    background-image: url('imgs/formats/obj.svg');
+                }
+                .format7{
+                    background-image: url('imgs/formats/fbx.svg');
+                }
+            }
+        }
+    }
+    //3 step process down
+    .downProcess{
+        background: none;
+        box-shadow: none;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        .processFlex{
+            .processUnit{
+                margin-top: 100px;
+                padding-top: 25px;
+                .processIcon01{
+                    background-image: url('imgs/process3d/process01.svg');
+                    background-size: contain;
+                    width: 110px;
+                }
+                .processIcon02{
+                    background-image: url('imgs/process3d/process02.svg');
+                    background-size: contain;
+                    width: 100px;
+                }
+                .processIcon03{
+                    background-image: url('imgs/process3d/process03.svg');
+                    background-size: contain;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    //benefits section
+    .benefits{
+        display: flex;
+        flex-direction: column;
+        .beneRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .beneUnit{
+                flex-basis: 33.33%;
+                align-self: center;
+                &:nth-of-type(2){
+                    margin: 0 80px;
+                }
+                h2{
+                    color: $pink;
+                    margin-bottom: 0;
+                    font-size: 1.2em;
+                }
+                p{
+                    color: $gray;
+                    line-height: 1.6em;
+                    margin-top: 10px;;
+                }
+            }
+        }
+    }
+}
+//360 viewer configurator cta section
+.viewerConfig{
+    padding-left: $mob;
+    padding-right: $mob;
+    height: 360px;
+    h1{
+        padding-top: 20px;
+    }
+    p{
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flexIt{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        .btn{
+            &:first-of-type{
+                margin-right: 15px;
+            }
+            &:last-of-type{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+.blog{
+    .blogFlex{
+        justify-content: center;
+        .blogUnit{
+            .blogImg01{
+                background-image: url('imgs/carat3d.jpg');
+            }
+            flex-basis: 100%;
+            max-width: 750px;
+            .text{
+                display: block;
+                overflow: none;
+                text-overflow: none; 
+            }
+            .header{
+                text-align: center;
+            }
+            .ctaBtn{
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .postProcess {
+        .processFlex {
+            .processUnit {
+                .chair{
+                    height: 280px;
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .postProcess {
+        .processFlex {
+            .processUnit {
+                .iWrap{
+                    .iFlex{
+                        .iconFlex{
+                            flex-basis: 16%;
+                        }
+                    }
+                }
+                .chair{
+                    height: 340px;
+                    width: 340px;
+                    right: calc(16% - 85px);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .postProcess {
+        .processFlex {
+            .processUnit {
+                .iWrap{
+                    .iFlex{
+                        .iconFlex{
+                            flex-basis: 25%;
+                            &:last-of-type{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .chair{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    .postProcess {
+        .flex3d{
+            flex-direction: column;
+            .img3d{
+                margin: 0 auto;
+            }
+        }
+        .wrapSwitch{
+            margin-top: -100px;
+        }
+    }
+}
+@media screen and (max-width: 980px) {
+    .downProcess{
+        .processFlex{
+            .processUnit{
+                max-width: 500px;
+                &:nth-of-type(3){
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .postProcess{
+        .benefits{
+            .beneRow{
+                flex-direction: column;
+                .beneUnit{
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .postProcess > .flex3d > .img3d{
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 620px) {
+    .postProcess {
+        .processFlex {
+            .processUnit {
+                .iWrap{
+                    .iFlex{
+                        flex-wrap: wrap;
+                        margin-top: 0;
+                        .iconFlex{
+                            flex-basis: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .wrapSwitch{
+            margin-top: -40px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .viewerConfig{
+        height: 420px;
+        h1{
+            line-height: 1.4em;
+        }
+    }
+    .blog > .blogFlex > .blogUnit > .ctaBtn{
+        margin-bottom: 20px;
+    }
+    .viewerConfig{
+        height: 490px;
+        h1{
+            padding-top: 10px;
+        }
+        p{
+            margin-bottom: 15px;
+        }
+        .flexIt{
+            flex-direction: column;
+            .ctaBtn{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 470px) {
+    .process > .processFlex > .processUnit{
+        h1{
+            font-size: 1.3em;
+        }
+        .iWrap{
+            p{
+                margin-top: 5px;
+            }
+        }
+    }
+    .postProcess{
+        .flex3d {
+            .img3d{
+            background: url('imgs/3dmodel.jpg') no-repeat center;
+            background-size: contain;
+            }
+            .text3d{
+                    .formats{
+                        flex-wrap: wrap;
+                        margin-top: 0;
+                        .formIco{
+                            flex-basis: 21%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .topImg > .topWrap > .mobHead{
+        font-size: 1.65em;
+    }
+    .postProcess {
+        .processFlex {
+            .processUnit {
+                padding-left: 0;
+                padding-right: 0;
+                .iWrap{
+                    p{
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                    .iFlex{
+                        .iconFlex{
+                            .icon1, .icon2, .icon3, .icon4, .icon5, .icon6, .icon7, .icon8{
+                                width: 70px;
+                                height: 70px;
+                            }
+                            h2{
+                                font-weight: normal;
+                                line-height: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .downProcess{
+        .processFlex{
+            .processUnit{
+                padding-left: 6%;
+                padding-right: 6%;
+                padding-bottom: 25px;
+                &:nth-of-type(1){
+                    margin-top: 50px !important;
+                }
+                &:nth-of-type(3){
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 340px) {
+    .viewerConfig{
+        .flexIt{
+            .ctaBtn{
+                margin-top: 5px;
+            }
+        }
+    }
+}
